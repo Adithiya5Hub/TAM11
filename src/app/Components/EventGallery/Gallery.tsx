@@ -14,7 +14,7 @@ const SkeletonOne = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-       <a href="/event-timeline">Opening Ceremony</a> 
+       <a href="https://drive.google.com/drive/folders/1XXJbK2DFLFiIvbRF6BWMt9VolKDjMVPG">Opening Ceremony</a> 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
@@ -82,7 +82,7 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbGxlZ2UlMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://i.ibb.co/0D4wr6S/Op-Ceremony.jpg",
   },
   {
     id: 2,
