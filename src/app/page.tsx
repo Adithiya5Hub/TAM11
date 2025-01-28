@@ -13,7 +13,7 @@ export default function Home() {
         <Navbar />      
           {/* <Main /> */}
           {/* <TracingBeam className="px-6"> */}
-        
+          {/* <TracingBeam className="px-6"> */}
           <Overview/>
           <Cards/>
           <Faculty />
