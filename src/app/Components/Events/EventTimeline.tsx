@@ -210,7 +210,7 @@ const cards = [
     title: "ENTERTAINMENT QUIZ",
     src: "https://i.ibb.co/bmPrcJs/entertainment-quiz.jpg",
     ctaText: "Register",
-    ctaLink: "https://forms.gle/mxbFKRnR4ayEjfh4A",
+    ctaLink: "https://forms.gle/JsLYSTZuQsio2KV16",
     content: () => {
       return (
         <p>
