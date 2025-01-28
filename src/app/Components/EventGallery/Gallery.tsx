@@ -82,7 +82,7 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "https://i.ibb.co/0D4wr6S/Op-Ceremony.jpg",
+      "https://i.ibb.co/9rGv8pS/IMG-2374.jpg",
   },
   {
     id: 2,
