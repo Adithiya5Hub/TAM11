@@ -5,6 +5,8 @@ import { LayoutGrid } from "../ui/layout-grid";
 export default function LayoutGridDemo() {
   return (
     <div className="h-screen py-20 w-full">
+          <h3 className='bg-clip-text text-transparent bg-gradient-to-b from-yellow-50 to-yellow-400 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] text-center xs:text-[40px] text-[30px]' style={{fontFamily:'batmfa, sans-serif'}}>Look </h3>
+
       <LayoutGrid cards={cards} />
     </div>
   );
@@ -14,7 +16,7 @@ const SkeletonOne = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-       <a href="https://drive.google.com/drive/folders/1XXJbK2DFLFiIvbRF6BWMt9VolKDjMVPG">Opening Ceremony</a> 
+       <a href="/event-timeline">Opening Ceremony</a> 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
