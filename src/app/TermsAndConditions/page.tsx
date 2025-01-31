@@ -1,13 +1,14 @@
 import React from "react";
 import TermsAndConditionsPage from "@/app/Components/tnc/terms-conditions";
 import Navbar from "@/app/Components/Navbar";
-import Footer from "@/app/Components/Home/Footer";
+import Footer1 from "@/app/Components/Home/footer1";
 
-export default function EventTimelinePage() {
+export default function TermsAndConditions() {
   return (
     <div>
       <Navbar />
       <TermsAndConditionsPage />
+      <Footer1 />
       
     </div>
   );

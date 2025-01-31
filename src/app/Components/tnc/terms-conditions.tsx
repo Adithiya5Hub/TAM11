@@ -52,8 +52,6 @@ const TermsAndConditionsPage = () => {
           ))}
         </div>
       </motion.main>
-      
-      <Footer />
     </>
   );
 };
