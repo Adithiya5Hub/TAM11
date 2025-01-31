@@ -27,7 +27,7 @@ export default function CarouselDemo() {
   ];
   return (
     <div className="relative overflow-hidden w-full h-full py-20">
-        <h1 className='bg-clip-text text-transparent bg-gradient-to-b from-yellow-50 to-yellow-400 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center'>EVENTS</h1>
+        <h1 className='bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center mb-8'>EVENTS</h1>
 
       <Carousel slides={slideData} />
      

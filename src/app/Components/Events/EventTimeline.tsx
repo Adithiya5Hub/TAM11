@@ -32,6 +32,10 @@ export default function EventTimeline() {
 
   return (
     <>
+    <div className="h-30vw py-20 w-full ">
+              <h4 className='bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] text-center xs:text-[40px] text-[30px] animate-popIn' style={{fontFamily:'Nasalization, sans-serif'}}>Explore our Events! </h4>
+    
+        </div>
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -102,7 +106,7 @@ export default function EventTimeline() {
                     layoutId={`button-${active.title}-${id}`}
                     href={active.ctaLink}
                     target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                    className="px-4 py-3 text-sm rounded-full font-bold bg-red-500 text-white"
                   >
                     {active.ctaText}
                   </motion.a>
@@ -160,9 +164,9 @@ export default function EventTimeline() {
             </div>
             <motion.button
               layoutId={`button-${card.title}-${id}`}
-              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0"
-            >
-              {card.ctaText}
+              className="relative overflow-hidden px-4 py-2 text-xl rounded-full font-bold text-black bg-gray-100 mt-4 md:mt-0 group hover:text-white hover:bg-transparent">
+              <span className="absolute inset-0 bg-gradient-to-r from-red-500 to-red-800 transform scale-x-0 group-hover:scale-x-100 opacity-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out z-0 animate-liquid"></span>
+              <span className="relative z-10">Register</span>
             </motion.button>
           </motion.div>
         ))}

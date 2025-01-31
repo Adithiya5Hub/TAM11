@@ -5,7 +5,7 @@ import { LayoutGrid } from "../ui/layout-grid";
 export default function LayoutGridDemo() {
   return (
     <div className="h-screen py-20 w-full ">
-          <h4 className='bg-clip-text text-transparent bg-gradient-to-b from-yellow-50 to-yellow-400 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] text-center xs:text-[40px] text-[30px]' style={{fontFamily:'batmfa, sans-serif'}}>Relive the Magic: Explore Event Highlights </h4>
+          <h4 className='bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] text-center xs:text-[40px] text-[30px] animate-popIn' style={{fontFamily:'Nasalization, sans-serif'}}>Relive the Magic: Explore Event Highlights </h4>
 
       <LayoutGrid cards={cards}/>
     </div>

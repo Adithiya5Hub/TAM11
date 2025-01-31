@@ -25,8 +25,8 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
   const isActive = (path: string) => currentPath === path;
 
   return (
-    <nav className="bg-black border-white bg-opacity-30 backdrop-filter backdrop-blur-lg sticky" style={{ fontFamily: 'Nasalization, sans-serif' }}>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-1">
+    <nav className="bg-black border-white bg-opacity-30 backdrop-filter backdrop-blur-lg sticky " style={{ fontFamily: 'Nasalization, sans-serif' }}>
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-1  rounded-b-3xl shadow-md">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="https://i.ibb.co/RB799d5/TAM-Logo.png" width={200} height={75} alt="" />
           
@@ -37,9 +37,9 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
             <button
               type="button"
               onClick={handleRegisterClick}
-              className="text-white bg-gradient-to-r from-yellow-400 to-amber-500 focus:outline-none font-medium rounded-full text-sm px-4 py-2 text-center dark:hover:bg-yellow-300 dark:hover:bg-amber-500"
+              className="text-white bg-gradient-to-r from-red-800 to-rose-700 focus:outline-none font-medium rounded-full text-sm px-4 py-2 text-center dark:hover:bg-red-700 dark:hover:bg-rose-600"
             >
-              REGISTER
+              REGISTER NOW !
               
             </button>
           )}
@@ -59,19 +59,19 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
         <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? "block" : "hidden"}`} id="navbar-cta">
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-black md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-black dark:bg-black md:dark:bg-black dark:border-gray-700">
             <li>
-              <a href="/" className={`block py-2 px-3 md:p-0 md:px-2 ${isActive('/') ? 'text-white bg-yellow-600 rounded-full' : 'text-white'} rounded-full hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-600`} aria-current={isActive('/') ? "page" : undefined}>Home</a>
+              <a href="/" className={`block py-2 px-3 md:p-0 md:px-2 ${isActive('/') ? 'text-white bg-rose-700 rounded-full' : 'text-white'} rounded-full hover:bg-red-300 md:hover:bg-transparent md:hover:text-rose-700`} aria-current={isActive('/') ? "page" : undefined}>Home</a>
             </li>
             <li>
-              <a href="/event-timeline" className={`block py-2 px-3 md:p-0 md:px-2 ${isActive('/event-timeline') ? 'text-white bg-yellow-600 rounded-full' : 'text-white'} rounded-full hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-600`} aria-current={isActive('/event-timeline') ? "page" : undefined}>Events</a>
+              <a href="/event-timeline" className={`block py-2 px-3 md:p-0 md:px-2 ${isActive('/event-timeline') ? 'text-white bg-rose-700 rounded-full' : 'text-white'} rounded-full hover:bg-red-300 md:hover:bg-transparent md:hover:text-rose-700`} aria-current={isActive('/event-timeline') ? "page" : undefined}>Events</a>
             </li>
             <li>
-              <a href="/members" className={`block py-2 px-3 md:p-0 md:px-2 ${isActive('/members') ? 'text-white bg-yellow-600 rounded-full' : 'text-white'}  rounded-full hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-600`} aria-current={isActive('/members') ? "page" : undefined}>Team</a>
+              <a href="/members" className={`block py-2 px-3 md:p-0 md:px-2 ${isActive('/members') ? 'text-white bg-rose-700 rounded-full' : 'text-white'} rounded-full hover:bg-red-300 md:hover:bg-transparent md:hover:text-rose-700`} aria-current={isActive('/members') ? "page" : undefined}>Team</a>
             </li>
             <li>
-              <a href="/gallery" className={`block py-2 px-3 md:p-0 md:px-2 ${isActive('/gallery') ? 'text-white bg-yellow-600 rounded-full' : 'text-white'} rounded-full hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-600`} aria-current={isActive('/gallery') ? "page" : undefined}>Gallery</a>
+              <a href="/gallery" className={`block py-2 px-3 md:p-0 md:px-2 ${isActive('/gallery') ? 'text-white bg-rose-700 rounded-full' : 'text-white'} rounded-full hover:bg-red-300 md:hover:bg-transparent md:hover:text-rose-700`} aria-current={isActive('/gallery') ? "page" : undefined}>Gallery</a>
             </li>
             <li>
-              <a href="/contact" className={`block py-2 px-3 md:p-0 md:px-2 ${isActive('/contact') ? 'text-white bg-yellow-600 rounded-full' : 'text-white'} rounded-full hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-600`} aria-current={isActive('/contact') ? "page" : undefined}>Contact Us</a>
+              <a href="/contact" className={`block py-2 px-3 md:p-0 md:px-2 ${isActive('/contact') ? 'text-white bg-rose-700 rounded-full' : 'text-white'} rounded-full hover:bg-red-300 md:hover:bg-transparent md:hover:text-rose-700`} aria-current={isActive('/contact') ? "page" : undefined}>Contact Us</a>
             </li>
           </ul>
         </div>

@@ -36,6 +36,21 @@ body {
   --background: #000000;
   --foreground: #000000;
 }
+@keyframes popIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-popIn {
+  animation: popIn 0.5s ease-out forwards;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
