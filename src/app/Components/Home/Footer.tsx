@@ -19,6 +19,10 @@ const Footer = () => {
     <a href="https://forms.gle/AahAmRswoEduns928" target="_blank" rel="noopener noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/128/2991/2991110.png" className='h-7 w-7 hover:scale-125' />
     </a>
+    <br />
+    <div className='flex flex-col gap-12 text-white justify-between '>
+    <a href="/TermsAndConditions">Terms and Conditions</a>
+    </div>
     
 </div>
 <p className="text-center text-gray-700 font-medium">&copy; 2025 TAM Ltd. All rights reservered.</p>
