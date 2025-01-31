@@ -5,7 +5,7 @@ import Cards from "@/app/Components/Home/Cards";
 import Faculty from "@/app/Components/Home/Faculty"
 import Footer from "@/app/Components/Home/Footer";
 import Events from "@/app/Components/Home/Events";
-
+import HeroSection from "@/app/Components/Home/Overview";
 export default function Home() {
   return (
     
@@ -15,7 +15,7 @@ export default function Home() {
           {/* <TracingBeam className="px-6"> */}
           {/* <TracingBeam className="px-6"> */}
           {/* <TracingBeam className="px-6"> */}
-          <Overview/>
+          <HeroSection/>
           <Faculty />
           {/*<Events />*/}
           {/* <FAQ /> */}

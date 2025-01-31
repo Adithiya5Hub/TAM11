@@ -1,38 +1,51 @@
 "use client";
-import { motion } from "framer-motion";
 import React from "react";
-import { ImagesSlider } from "@/app/Components/ui/images-slider";
+import { motion } from "framer-motion";
 
-export default function ImagesSliderDemo() {
-  const images = [
-    "https://i.ibb.co/zZvTMjs/IMG-9043.jpg",
-    "https://i.ibb.co/sqnVtvP/MG-3895.jpg",
-    "https://i.ibb.co/GpfLK4X/IMG-3583.jpg",
-  ];
+export default function HeroSection() {
   return (
-    <ImagesSlider className="h-[40rem]" images={images}>
+    <div className="relative h-screen w-full overflow-hidden bg-black">
+      {/* Background Animation (Gradient) */}
+      <div className="absolute inset-0 bg-gradient-to-r from-red-400 via-red-800 to-black-800 animate-gradient"></div>
+
+      {/* Text Animation */}
       <motion.div
-        initial={{
-          opacity: 0,
-          y: -80,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 0.5,
-        }}
-        className="z-50 flex flex-col justify-center items-center"
+        className="absolute inset-0 flex items-center justify-center"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
       >
-        <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-neutral-400 py-4 px-6">
-        TAM (Technology Awareness Month) is a student-run organization whose franchise has been functioning since the past 10 years at St.Martin’s Engineering College. This month-long festival features a variety of engaging workshops, discussion shows, and interactive events designed to foster a deeper understanding of current technological trends and also encuorage active participation in fun filled events.
-        </motion.p>
-        {/* <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-          <span>Join now →</span>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-        </button> */}
+        <motion.h1
+          className="text-6xl md:text-8xl font-bold text-white text-center"
+          initial={{ scale: 0.5, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1, delay: 1, type: "spring", bounce: 0.5 }}
+        >
+          Technology Awareness Month
+        </motion.h1>
       </motion.div>
-    </ImagesSlider>
+
+      {/* Interactive Particles Background (Optional) */}
+      <div className="absolute inset-0">
+        {/* You can use a library like `react-particles` or `particles.js` for interactive particles */}
+        {/* Example: https://www.npmjs.com/package/react-particles-js */}
+      </div>
+
+      {/* Scroll Indicator (Optional) */}
+      <motion.div
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 2 }}
+      >
+        <div className="w-6 h-10 border-2 border-white rounded-full flex items-center justify-center">
+          <motion.div
+            className="w-2 h-2 bg-white rounded-full"
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+          />
+        </div>
+      </motion.div>
+    </div>
   );
 }
