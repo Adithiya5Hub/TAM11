@@ -17,7 +17,7 @@ export default function Home() {
           {/* <TracingBeam className="px-6"> */}
           <Overview/>
           <Faculty />
-          <Events />
+          {/*<Events />*/}
           {/* <FAQ /> */}
           <Footer />
           

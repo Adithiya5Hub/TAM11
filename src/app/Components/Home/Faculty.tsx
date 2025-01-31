@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 type Direction = "left" | "right" | "up" | "down" | "none";
 type TransitionType = "tween" | "spring" | "keyframes";
@@ -33,7 +33,7 @@ export const fadeIn = ({ direction, type, delay = 0, duration = 1 }: FadeInProps
 
 export default function StickyScrollRevealDemo() {
   return (
-    <div className="p-10">
+    <div className="p-10 overflow-hidden"> {/* Add overflow-hidden to prevent horizontal scroll */}
       {/* Group Director Section */}
       <div className="flex flex-col gap-10">
         {/* First Row: Image on Left, Description on Right */}
@@ -46,7 +46,7 @@ export default function StickyScrollRevealDemo() {
         >
           {/* Image on Left */}
           <motion.div
-            className="md:w-1/2"
+            className="md:w-1/2 w-full" // Ensure full width on smaller screens
             variants={fadeIn({ direction: "left", type: "tween", delay: 0.4, duration: 1 })}
             initial="hidden"
             whileInView="show"
@@ -63,7 +63,7 @@ export default function StickyScrollRevealDemo() {
 
           {/* Description on Right */}
           <motion.div
-            className="md:w-1/2"
+            className="md:w-1/2 w-full" // Ensure full width on smaller screens
             variants={fadeIn({ direction: "right", type: "tween", delay: 0.6, duration: 1 })}
             initial="hidden"
             whileInView="show"
@@ -88,7 +88,7 @@ export default function StickyScrollRevealDemo() {
         >
           {/* Description on Left */}
           <motion.div
-            className="md:w-1/2 order-2 md:order-1"
+            className="md:w-1/2 w-full order-2 md:order-1" // Ensure full width on smaller screens
             variants={fadeIn({ direction: "left", type: "tween", delay: 0.4, duration: 1 })}
             initial="hidden"
             whileInView="show"
@@ -104,7 +104,7 @@ export default function StickyScrollRevealDemo() {
 
           {/* Image on Right */}
           <motion.div
-            className="md:w-1/2 order-1 md:order-2"
+            className="md:w-1/2 w-full order-1 md:order-2" // Ensure full width on smaller screens
             variants={fadeIn({ direction: "right", type: "tween", delay: 0.6, duration: 1 })}
             initial="hidden"
             whileInView="show"
