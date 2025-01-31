@@ -4,10 +4,10 @@ import { LayoutGrid } from "../ui/layout-grid";
 
 export default function LayoutGridDemo() {
   return (
-    <div className="h-screen py-20 w-full">
-          {/* <h3 className='bg-clip-text text-transparent bg-gradient-to-b from-yellow-50 to-yellow-400 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] text-center xs:text-[40px] text-[30px]' style={{fontFamily:'batmfa, sans-serif'}}>Look </h3> */}
+    <div className="h-screen py-20 w-full ">
+          <h4 className='bg-clip-text text-transparent bg-gradient-to-b from-yellow-50 to-yellow-400 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] text-center xs:text-[40px] text-[30px]' style={{fontFamily:'batmfa, sans-serif'}}>Relive the Magic: Explore Event Highlights </h4>
 
-      <LayoutGrid cards={cards} />
+      <LayoutGrid cards={cards}/>
     </div>
   );
 }
@@ -16,7 +16,7 @@ const SkeletonOne = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-       <a href="/event-timeline">Opening Ceremony</a> 
+       <a href="https://drive.google.com/drive/folders/16RJwmuP1JXj64-7NEKlAWYVAuCSHXsK0?usp=drive_link" target="_blank">Opening Ceremony</a> 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
@@ -33,7 +33,7 @@ const SkeletonTwo = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-       <a href="/event-timeline">Podcast</a> 
+       <a href="/event-timeline">Entertainment Quiz</a> 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
@@ -91,7 +91,7 @@ const cards = [
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1589903308904-1010c2294adc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9kY2FzdHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://i.ibb.co/QFgDPFKP/IMG-2462.jpg",
   },
   {
     id: 3,

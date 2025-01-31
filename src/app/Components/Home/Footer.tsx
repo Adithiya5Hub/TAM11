@@ -17,11 +17,11 @@ const Footer = () => {
         <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" className='h-7 w-7 hover:scale-125' />
     </a>
     <a href="https://forms.gle/AahAmRswoEduns928" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn-icons-png.flaticon.com/128/2991/2991110.png" className='h-7 w-7 hover:scale-125' />
+        <img src="https://cdn-icons-png.flaticon.com/128/2991/2991110.png" className='h-7 w-7 hover:scale-125' /> HEAD
     </a>  
   </div>
   <div className="flex flex-col text-white font-medium">
-    <a href="/t&c">Terms and conditions</a>
+    <a href="/TermsAndConditions">Terms and conditions</a>
     <a href="/c&r">Cancellation and refund policy</a>
     <a href="/pp">Privacy Policy</a>
     <a href="/s&d">Shipping and Delivery Policy</a>
