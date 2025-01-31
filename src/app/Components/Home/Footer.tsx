@@ -22,9 +22,9 @@ const Footer = () => {
   </div>
   <div className="flex flex-col text-white font-medium gap-2">
     <a href="/TermsAndConditions">Terms and conditions</a>
-    <a href="/c&r">Cancellation and refund policy</a>
-    <a href="/pp">Privacy Policy</a>
-    <a href="/s&d">Shipping and Delivery Policy</a>
+    <a href="/Cancellation-refund">Cancellation and refund policy</a>
+    <a href="/Privacy-Policy">Privacy Policy</a>
+    <a href="/Shipping-Delivery">Shipping and Delivery Policy</a>
   </div>
 </div>
 <p className="text-center text-gray-700 font-medium">&copy; 2025 TAM Ltd. All rights reservered.</p>
