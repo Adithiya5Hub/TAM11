@@ -5,6 +5,8 @@ import { LayoutGrid } from "../ui/layout-grid";
 export default function LayoutGridDemo() {
   return (
     <div className="h-screen py-20 w-full">
+          {/* <h3 className='bg-clip-text text-transparent bg-gradient-to-b from-yellow-50 to-yellow-400 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] text-center xs:text-[40px] text-[30px]' style={{fontFamily:'batmfa, sans-serif'}}>Look </h3> */}
+
       <LayoutGrid cards={cards} />
     </div>
   );
@@ -82,7 +84,7 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbGxlZ2UlMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://i.ibb.co/9rGv8pS/IMG-2374.jpg",
   },
   {
     id: 2,
