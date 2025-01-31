@@ -25,8 +25,8 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
   const isActive = (path: string) => currentPath === path;
 
   return (
-    <nav className="bg-black border-white bg-opacity-30 backdrop-filter backdrop-blur-lg sticky " style={{ fontFamily: 'Nasalization, sans-serif' }}>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-1  rounded-b-3xl shadow-md">
+    <div className=" border-white bg-opacity-30  rounded-b-lg backdrop-filter backdrop-blur-lg sticky " style={{ fontFamily: 'Nasalization, sans-serif' }}>
+      <div className="max-w-screen-xl flex flex-wrap items-center rounded-b-lg justify-between mx-auto px-4 py-1  rounded-b-3xl shadow-md">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="https://i.ibb.co/RB799d5/TAM-Logo.png" width={200} height={75} alt="" />
           
@@ -57,7 +57,7 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
           </button>
         </div>
         <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? "block" : "hidden"}`} id="navbar-cta">
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-black md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-black dark:bg-black md:dark:bg-black dark:border-gray-700">
+          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
             <li>
               <a href="/" className={`block py-2 px-3 md:p-0 md:px-2 ${isActive('/') ? 'text-white bg-rose-700 rounded-full' : 'text-white'} rounded-full hover:bg-red-300 md:hover:bg-transparent md:hover:text-rose-700`} aria-current={isActive('/') ? "page" : undefined}>Home</a>
             </li>
@@ -76,7 +76,7 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

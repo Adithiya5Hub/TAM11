@@ -4,7 +4,7 @@ import Overview from "@/app/Components/Home/Overview";
 import Cards from "@/app/Components/Home/Cards";
 import Faculty from "@/app/Components/Home/Faculty"
 import Footer from "@/app/Components/Home/Footer";
-import Reviews from "@/app/Components/Home/Reviews";
+import Events from "@/app/Components/Home/Events";
 
 export default function Home() {
   return (
@@ -16,9 +16,8 @@ export default function Home() {
           {/* <TracingBeam className="px-6"> */}
           {/* <TracingBeam className="px-6"> */}
           <Overview/>
-          <Cards/>
           <Faculty />
-          <Reviews />
+          <Events />
           {/* <FAQ /> */}
           <Footer />
           

@@ -12,8 +12,8 @@ body {
   font-style: normal;
 }
 @font-face {
-  font-family: 'batmfa';
-  src: url('./fonts/batmfa__.ttf') format('opentype');
+  font-family: 'Nasalization';
+  src: url('./fonts/nasalization-rg.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,8 +33,8 @@ body {
 }
 
 :root {
-  --background: #000000;
-  --foreground: #000000;
+  --background:  linear-gradient(to right, gray, white);
+  --foreground:  linear-gradient(to right, gray, white);
 }
 @keyframes popIn {
   0% {
@@ -78,8 +78,8 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --foreground: #000000;
+    --background: linear-gradient(to right, #3b0d0c, black);;
+    --foreground: linear-gradient(to right, #3b0d0c, black);;
   }
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 .highlight {
-    background-color: yellow;
+    background-color: transparent;
 }
 
 .hidden {
