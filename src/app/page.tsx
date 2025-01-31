@@ -14,6 +14,7 @@ export default function Home() {
           {/* <Main /> */}
           {/* <TracingBeam className="px-6"> */}
           {/* <TracingBeam className="px-6"> */}
+          {/* <TracingBeam className="px-6"> */}
           <Overview/>
           <Cards/>
           <Faculty />
