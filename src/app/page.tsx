@@ -6,6 +6,7 @@ import Faculty from "@/app/Components/Home/Faculty"
 import Footer from "@/app/Components/Home/Footer";
 import Events from "@/app/Components/Home/Events";
 import HeroSection from "@/app/Components/Home/Overview";
+import OurMission from "./Components/Home/mission";
 export default function Home() {
   return (
     
@@ -16,6 +17,7 @@ export default function Home() {
           {/* <TracingBeam className="px-6"> */}
           {/* <TracingBeam className="px-6"> */}
           <HeroSection/>
+          <OurMission />
           <Faculty />
           {/*<Events />*/}
           {/* <FAQ /> */}

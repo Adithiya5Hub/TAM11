@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
 
 interface NavbarProps {
   hideRegisterButton?: boolean; // Prop to control button visibility
@@ -38,67 +37,57 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
   ];
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ type: "spring", stiffness: 100 }}
-      className="sticky top-0 z-50 bg-opacity-30 backdrop-filter backdrop-blur-lg shadow-lg" // Removed border-b border-gray-200
-      style={{ fontFamily: "Nasalization, sans-serif" }}
-    >
+    <nav className="fixed top-0 w-full z-50 bg-opacity-30 backdrop-filter backdrop-blur-lg shadow-lg">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20"> {/* Increased height to h-20 */}
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <motion.a
+          <a
             href="/"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex items-center space-x-3"
+            className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300"
           >
             <img
               src="https://i.ibb.co/RB799d5/TAM-Logo.png"
               width={200}
               height={75}
               alt="Logo"
-              className="hover:opacity-80 transition-opacity duration-300"
             />
-          </motion.a>
+          </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center h-full space-x-8">
             {navLinks.map((link) => (
-              <motion.a
+              <div
                 key={link.path}
-                href={link.path}
-                className={`relative text-white text-sm font-medium hover:text-rose-700 transition-colors duration-300 ${
-                  isActive(link.path) ? "text-rose-700" : ""
+                className={`h-full flex items-center px-4 cursor-pointer relative group ${
+                  isActive(link.path) ? "bg-rose-700/20" : ""
                 }`}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
               >
-                {link.label}
+                <a
+                  href={link.path}
+                  className={`relative text-white text-lg font-medium transition-colors duration-300 ${
+                    isActive(link.path) ? "text-rose-700" : ""
+                  }`}
+                >
+                  {link.label}
+                </a>
+                {/* Highlight Animation */}
                 {isActive(link.path) && (
-                  <motion.span
-                    layoutId="underline"
-                    className="absolute left-0 bottom-0 h-0.5 w-full bg-rose-700"
-                    transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                  />
+                  <div className="absolute inset-0 bg-rose-700/20 animate-highlight"></div>
                 )}
-              </motion.a>
+              </div>
             ))}
           </div>
 
           {/* Register Button and Mobile Menu Toggle */}
           <div className="flex items-center space-x-4">
             {!hideRegisterButton && (
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              <button
                 type="button"
                 onClick={handleRegisterClick}
                 className="text-white bg-gradient-to-r from-red-800 to-rose-700 focus:outline-none font-medium rounded-full text-sm px-4 py-2 text-center hover:bg-gradient-to-l transition-all duration-300"
               >
                 REGISTER NOW !
-              </motion.button>
+              </button>
             )}
             <button
               onClick={toggleMenu}
@@ -128,42 +117,30 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
         </div>
 
         {/* Mobile Menu */}
-        <AnimatePresence>
-          {isMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className="md:hidden"
-              id="navbar-cta"
-            >
-              <ul className="flex flex-col space-y-2 py-4">
-                {navLinks.map((link) => (
-                  <motion.li
-                    key={link.path}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+        {isMenuOpen && (
+          <div className="md:hidden" id="navbar-cta">
+            <ul className="flex flex-col space-y-2 py-4">
+              {navLinks.map((link) => (
+                <li
+                  key={link.path}
+                  className={`px-4 py-2 rounded-lg ${
+                    isActive(link.path) ? "bg-rose-700/20" : ""
+                  }`}
+                >
+                  <a
+                    href={link.path}
+                    onClick={handleLinkClick}
+                    className={`block text-white text-lg font-medium transition-colors duration-300`}
                   >
-                    <a
-                      href={link.path}
-                      onClick={handleLinkClick}
-                      className={`block py-2 px-4 rounded-lg ${
-                        isActive(link.path)
-                          ? "text-white bg-rose-700"
-                          : "text-white hover:bg-red-300"
-                      } transition-colors duration-300`}
-                      aria-current={isActive(link.path) ? "page" : undefined}
-                    >
-                      {link.label}
-                    </a>
-                  </motion.li>
-                ))}
-              </ul>
-            </motion.div>
-          )}
-        </AnimatePresence>
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 
