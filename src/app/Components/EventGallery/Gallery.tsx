@@ -39,7 +39,7 @@ const SkeletonTwo = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
       The Entertainment Quiz is a fun-filled challenge that dives into the 
 world of movies, music, and pop culture. Test your knowledge and 
-compete with others to prove you're the ultimate entertainment 
+compete with others to prove you&apos;re the ultimate entertainment 
 enthusiast!
 
       </p>
