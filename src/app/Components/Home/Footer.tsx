@@ -48,7 +48,7 @@ const Footer = () => {
               />
             </a>
           </div>
-          <div className="flex flex-col text-white font-medium gap-2">
+          <div className="flex flex-col text-white font-medium gap-2 text-transparent text-gradient-to-t from-red-200 to-red-800">
             <a href="/TermsAndConditions">Terms and conditions</a>
             <a href="/Cancellation-refund">Cancellation and refund policy</a>
             <a href="/Privacy-Policy">Privacy Policy</a>

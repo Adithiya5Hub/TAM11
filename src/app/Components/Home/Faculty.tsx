@@ -33,7 +33,7 @@ export const fadeIn = ({ direction, type, delay = 0, duration = 1 }: FadeInProps
 
 export default function StickyScrollRevealDemo() {
   return (
-    <div className="p-10 overflow-hidden"> {/* Add overflow-hidden to prevent horizontal scroll */}
+    <div className="pt-[15vh] pb-[20vh] p-10 overflow-hidden"> {/* Add overflow-hidden to prevent horizontal scroll */}
       {/* Group Director Section */}
       <div className="flex flex-col gap-10">
         {/* First Row: Image on Left, Description on Right */}
@@ -80,7 +80,7 @@ export default function StickyScrollRevealDemo() {
 
         {/* Second Row: Image on Right, Description on Left */}
         <motion.div
-          className="flex flex-col md:flex-row items-center gap-8"
+          className="pt-[10vw] flex flex-col md:flex-row items-center gap-8"
           variants={fadeIn({ direction: "right", type: "tween", delay: 0.2, duration: 1 })}
           initial="hidden"
           whileInView="show"
@@ -110,11 +110,12 @@ export default function StickyScrollRevealDemo() {
             whileInView="show"
             viewport={{ once: false, amount: 0.5 }}
           >
-            <div className="aspect-w-16 aspect-h-9"> {/* Enforce 16:9 aspect ratio */}
+            {/* Container with height and width of 40vw */}
+            <div style={{ height: "20vw", width: "40vw" }} className="overflow-hidden rounded">
               <img
                 src="https://ik.imagekit.io/o3b14qow3gqi/Crew/sss_z642MOd4G.jpg?updatedAt=1647509408608"
                 alt="Faculty Advisor"
-                className="rounded object-cover w-full h-full"
+                className="object-cover w-full h-full"
               />
             </div>
           </motion.div>

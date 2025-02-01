@@ -17,9 +17,9 @@ const TermsAndConditionsPage = () => {
           damping: 10,
           stiffness: 100,
         }}
-        className="wrapper flex flex-col items-start justify-center"
+        className="pt-[15vh] wrapper flex flex-col items-start justify-center" style={{ fontFamily: 'Nasalization, sans-serif' }}
       >
-        <h1 className="mx-auto mb-8 w-full text-center text-4xl font-extrabold tracking-tighter text-primary md:mb-12 md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-yellow-50 to-yellow-400 bg-opacity-50">
+        <h1 className="mx-auto mb-8 w-full text-center text-4xl font-extrabold tracking-tighter text-primary md:mb-12 md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50">
           Terms & Conditions
         </h1>
         <div className="mx-auto max-w-3xl">

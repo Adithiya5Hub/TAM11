@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-opacity-30 backdrop-filter backdrop-blur-lg shadow-lg">
+    <nav className="fixed top-0 w-full z-50 bg-opacity-30 backdrop-filter backdrop-blur-lg shadow-lg" style={{ fontFamily: 'Nasalization, sans-serif' }}>
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
