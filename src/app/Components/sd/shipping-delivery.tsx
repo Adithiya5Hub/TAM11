@@ -17,7 +17,7 @@ const ShippingDeliveryPage = () => {
           damping: 10,
           stiffness: 100,
         }}
-        className="pt-[15vh] wrapper flex flex-col items-start justify-center" style={{ fontFamily: 'Nasalization, sans-serif' }}
+        className="pt-[15vh] wrapper flex flex-col items-start justify-center" style={{ fontFamily: 'Striger, sans-serif' }}
       >
         <h1 className="mx-auto mb-8 w-full text-center text-4xl font-extrabold tracking-tighter text-primary md:mb-12 md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50">
           Cancellation & Refund Policy
