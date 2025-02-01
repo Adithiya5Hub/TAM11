@@ -84,14 +84,14 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "https://i.ibb.co/9rGv8pS/IMG-2374.jpg",
+      "https://i.ibb.co/Z6BgXDzP/IMG-2299.jpg",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "https://i.ibb.co/QFgDPFKP/IMG-2462.jpg",
+      "https://i.ibb.co/cKQbFwW4/entertainmentquiz.jpgp",
   },
   {
     id: 3,
