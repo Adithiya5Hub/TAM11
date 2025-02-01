@@ -51,7 +51,7 @@ export default function EventTimeline() {
     <>
       <div className="h-30vw py-20 w-full">
         <h4
-          className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] text-center xs:text-[40px] text-[30px] animate-popIn"
+          className="pt-[10vh] bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] text-center xs:text-[40px] text-[30px] animate-popIn"
           style={{ fontFamily: "Striger, sans-serif" }}
         >
           Explore our Events!
@@ -288,7 +288,7 @@ const cards = [
     title: "YOUTH PARLIAMENT",
     src: "https://i.ibb.co/vHDHf16/youthparliament.webp",
     ctaText: "Register",
-    ctaLink: "https://forms.gle/XBo4FmybffXjjLy9A",
+    ctaLink: "https://forms.gle/pgifMxPGXkjkhxmc9",
     content: () => {
       return (
         <p>
