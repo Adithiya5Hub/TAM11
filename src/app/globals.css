@@ -32,10 +32,10 @@ body {
   font-style: normal;
 }
 
-:root {
+/* :root {
   --background:  linear-gradient(to right, gray, white);
   --foreground:  linear-gradient(to right, gray, white);
-}
+} */
 /* Customize the entire scrollbar */
 ::-webkit-scrollbar {
   width: 12px; /* Width of the vertical scrollbar */
