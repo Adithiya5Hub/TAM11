@@ -15,17 +15,17 @@ const Footer = () => {
         {/* Links Section */}
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-5 bg-gray-50 bg-opacity-10 p-4 rounded-lg shadow-md">
           {/* Links Stacked Vertically on Small Screens */}
-          <div className="flex flex-col md:flex-row md:space-x-5 md:space-y-5 md:gap-20 text-white font-medium text-center md:text-left">
-            <a href="/TermsAndConditions" className="hover:text-rose-500 transition-colors duration-1">
+          <div className="flex flex-col md:flex-row md:space-x-5 md:gap-20 text-white font-medium text-center md:text-left">
+            <a href="/TermsAndConditions" className="hover:text-rose-500 transition-colors duration-1 animate-highlight align-text-center">
               Terms and conditions
             </a>
-            <a href="/Cancellation-refund" className="hover:text-rose-500 transition-colors duration-1">
+            <a href="/Cancellation-refund" className="hover:text-rose-500 space-y-5 transition-colors duration-1 animate-highlight">
               Cancellation and refund policy
             </a>
-            <a href="/Privacy-Policy" className="hover:text-rose-500 transition-colors duration-1">
+            <a href="/Privacy-Policy" className="hover:text-rose-500  space-y-5 transition-colors duration-1 animate-highlight">
               Privacy Policy
             </a>
-            <a href="/Shipping-Delivery" className="hover:text-rose-500 transition-colors duration-1">
+            <a href="/Shipping-Delivery" className="hover:text-rose-500  space-y-5 transition-colors duration-1 animate-highlight">
               Shipping and Delivery Policy
             </a>
           </div>
