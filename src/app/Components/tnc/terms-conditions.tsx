@@ -1,5 +1,4 @@
 'use client';
-import Footer from '@/app/Components/Home/Footer';
 import { tncContent } from './tnc-content';
 import { motion } from 'framer-motion';
 

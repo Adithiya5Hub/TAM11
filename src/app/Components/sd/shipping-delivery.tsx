@@ -1,5 +1,4 @@
 'use client';
-import Footer from '@/app/Components/Home/Footer';
 import { sdContent } from './sd-contents';
 import { motion } from 'framer-motion';
 

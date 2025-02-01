@@ -1,5 +1,4 @@
 'use client';
-import Footer from '@/app/Components/Home/Footer';
 import { ppContent } from './pp-content';
 import { motion } from 'framer-motion';
 

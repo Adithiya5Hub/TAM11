@@ -1,5 +1,4 @@
 'use client';
-import Footer from '@/app/Components/Home/Footer';
 import { cnrContent } from './cnr-content';
 import { motion } from 'framer-motion';
 

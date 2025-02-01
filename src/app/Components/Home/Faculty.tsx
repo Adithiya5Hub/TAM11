@@ -82,7 +82,7 @@ export default function StickyScrollRevealDemo() {
                         </motion.div>
             </h2>
             <p className="sm:text-[18px] text-[14px] text-white tracking-wider">
-              Dr. P. Santosh Kumar Patra, Group Director of St. Martin's Engineering College, holds a B.E. in Computer Science & Engineering, an MTech in Computer Science & Engineering, and a Ph.D. in Computer Science & Engineering. His areas of interest are Artificial Intelligence, Software Engineering, Data Mining and Warehousing, and Wireless Networks.
+              Dr. P. Santosh Kumar Patra, Group Director of St. Martin&apos;s Engineering College, holds a B.E. in Computer Science & Engineering, an MTech in Computer Science & Engineering, and a Ph.D. in Computer Science & Engineering. His areas of interest are Artificial Intelligence, Software Engineering, Data Mining and Warehousing, and Wireless Networks.
             </p>
           </motion.div>
         </motion.div>
