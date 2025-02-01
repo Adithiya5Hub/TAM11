@@ -15,7 +15,7 @@ export default function LayoutGridDemo() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="font-bold md:text-4xl text-xl text-white" style={{fontFamily:'Valorant_Font, sans-serif'}}>
        <a href="https://drive.google.com/drive/folders/16RJwmuP1JXj64-7NEKlAWYVAuCSHXsK0?usp=drive_link" target="_blank">Opening Ceremony</a> 
       </p>
       <p className="font-normal text-base text-white"></p>
@@ -32,15 +32,16 @@ explore and share the latest global trends.
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-       <a href="/event-timeline">Entertainment Quiz</a> 
+      <p className="font-bold md:text-4xl text-xl text-white"style={{fontFamily:'Valorant_Font, sans-serif'}}>
+       <a href="https://drive.google.com/drive/folders/1nDNJWedMusUZvxeXoXL1zQkLMjbJ1B1l?usp=drive_link">Entertainment Quiz</a> 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      The podcast series brings insightful conversations with experts, thought
-leaders, and influencers, covering the latest trends in technology,
-entertainment, and culture. Tune in for discussions that spark curiosity
-and broaden perspectives
+      The Entertainment Quiz is a fun-filled challenge that dives into the 
+world of movies, music, and pop culture. Test your knowledge and 
+compete with others to prove you're the ultimate entertainment 
+enthusiast!
+
       </p>
     </div>
   );
@@ -48,7 +49,7 @@ and broaden perspectives
 const SkeletonThree = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="font-bold md:text-4xl text-xl text-white" style={{fontFamily:'Valorant_Font, sans-serif'}}>
        <a href="/event-timeline">Group Discussion</a> 
       </p>
       <p className="font-normal text-base text-white"></p>
@@ -64,7 +65,7 @@ thinking skills.
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="font-bold md:text-4xl text-xl text-white" style={{fontFamily:'Valorant_Font, sans-serif'}}>
        <a href="/event-timeline">Talkshow</a> 
       </p>
       <p className="font-normal text-base text-white"></p>
@@ -91,7 +92,7 @@ const cards = [
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "https://i.ibb.co/cKQbFwW4/entertainmentquiz.jpgp",
+      "https://i.ibb.co/RG6Bpfk0/IMG-2476.jpg",
   },
   {
     id: 3,
