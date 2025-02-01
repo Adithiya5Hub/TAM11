@@ -47,9 +47,10 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
           >
             <img
               src="https://i.ibb.co/RB799d5/TAM-Logo.png"
-              width={200}
-              height={75}
+              width={175}
+              height={65}
               alt="Logo"
+              className="w-32 h-auto md:w-40" // Adjusted logo size for mobile
             />
           </a>
 
@@ -84,15 +85,16 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
               <button
                 type="button"
                 onClick={handleRegisterClick}
-                className="text-white bg-gradient-to-r from-red-800 to-rose-700 focus:outline-none font-medium rounded-full text-sm px-4 py-2 text-center hover:bg-gradient-to-l transition-all duration-300"
+                className="hidden md:block text-white bg-gradient-to-r from-red-800 to-rose-700 focus:outline-none font-medium rounded-full text-sm px-4 py-2 text-center hover:bg-gradient-to-l transition-all duration-300"
               >
-                REGISTER NOW !
+                REGISTER NOW
               </button>
             )}
+            {/* Mobile Menu Toggle Button */}
             <button
               onClick={toggleMenu}
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-cta"
               aria-expanded={isMenuOpen ? "true" : "false"}
             >
@@ -118,7 +120,7 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden" id="navbar-cta">
+          <div className="md:hidden bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg">
             <ul className="flex flex-col space-y-2 py-4">
               {navLinks.map((link) => (
                 <li
@@ -136,6 +138,17 @@ const Navbar: React.FC<NavbarProps> = ({ hideRegisterButton }) => {
                   </a>
                 </li>
               ))}
+              {!hideRegisterButton && (
+                <li className="px-4 py-2">
+                  <button
+                    type="button"
+                    onClick={handleRegisterClick}
+                    className="w-full text-white bg-gradient-to-r from-red-800 to-rose-700 focus:outline-none font-medium rounded-full text-sm px-4 py-2 text-center hover:bg-gradient-to-l transition-all duration-300"
+                  >
+                    REGISTER NOW
+                  </button>
+                </li>
+              )}
             </ul>
           </div>
         )}

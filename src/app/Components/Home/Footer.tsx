@@ -12,49 +12,63 @@ const Footer = () => {
         transition={{ duration: 0.8, ease: "easeOut" }} // Smooth animation
         viewport={{ once: true }} // Animate only once
       >
-        <div className="flex justify-content space-x-5 justify-center flex gap-[20vw] bg-gray-50 bg-opacity-10 p-4 rounded-lg shadow-md">
-          <div className="flex items-center space-x-5 flex gap-20">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=tamv112024@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png"
-                className="h-10 w-10 hover:scale-125 transition-transform duration-300"
-                alt="Email"
-              />
+        {/* Links Section */}
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-5 bg-gray-50 bg-opacity-10 p-4 rounded-lg shadow-md">
+          {/* Links Stacked Vertically on Small Screens */}
+          <div className="flex flex-col md:flex-row md:space-x-5 md:space-y-5 md:gap-20 text-white font-medium text-center md:text-left">
+            <a href="/TermsAndConditions" className="hover:text-rose-500 transition-colors duration-1">
+              Terms and conditions
             </a>
-            <a
-              href="https://www.instagram.com/smec.tam?igsh=MXdyMHNubnV5dWNnMg=="
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"
-                className="h-10 w-10 hover:scale-125 transition-transform duration-300"
-                alt="Instagram"
-              />
+            <a href="/Cancellation-refund" className="hover:text-rose-500 transition-colors duration-1">
+              Cancellation and refund policy
             </a>
-            <a
-              href="https://forms.gle/AahAmRswoEduns928"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/128/2991/2991110.png"
-                className="h-10 w-10 hover:scale-125 transition-transform duration-300"
-                alt="Google Forms"
-              />
+            <a href="/Privacy-Policy" className="hover:text-rose-500 transition-colors duration-1">
+              Privacy Policy
             </a>
-          </div>
-          <div className="flex flex-col text-white font-medium gap-2 text-transparent text-gradient-to-t from-red-200 to-red-800">
-            <a href="/TermsAndConditions">Terms and conditions</a>
-            <a href="/Cancellation-refund">Cancellation and refund policy</a>
-            <a href="/Privacy-Policy">Privacy Policy</a>
-            <a href="/Shipping-Delivery">Shipping and Delivery Policy</a>
+            <a href="/Shipping-Delivery" className="hover:text-rose-500 transition-colors duration-1">
+              Shipping and Delivery Policy
+            </a>
           </div>
         </div>
+
+        {/* Social Media Links */}
+        <div className="flex justify-center space-x-5">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=tamv112024@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png"
+              className="h-10 w-10 hover:scale-125 transition-transform duration-300"
+              alt="Email"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/smec.tam?igsh=MXdyMHNubnV5dWNnMg=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"
+              className="h-10 w-10 hover:scale-125 transition-transform duration-300"
+              alt="Instagram"
+            />
+          </a>
+          <a
+            href="https://forms.gle/AahAmRswoEduns928"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2991/2991110.png"
+              className="h-10 w-10 hover:scale-125 transition-transform duration-300"
+              alt="Google Forms"
+            />
+          </a>
+        </div>
+
+        {/* Copyright Text */}
         <p className="text-center text-gray-700 font-medium">
           &copy; 2025 TAM Ltd. All rights reserved.
         </p>

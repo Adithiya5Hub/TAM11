@@ -1,10 +1,7 @@
 'use client';
 import Navbar from "@/app/Components/Navbar";
-import Overview from "@/app/Components/Home/Overview";
-import Cards from "@/app/Components/Home/Cards";
 import Faculty from "@/app/Components/Home/Faculty"
 import Footer from "@/app/Components/Home/Footer";
-import Events from "@/app/Components/Home/Events";
 import HeroSection from "@/app/Components/Home/Overview";
 import OurMission from "./Components/Home/mission";
 export default function Home() {

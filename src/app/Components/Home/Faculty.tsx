@@ -111,7 +111,7 @@ export default function StickyScrollRevealDemo() {
             viewport={{ once: false, amount: 0.5 }}
           >
             {/* Container with height and width of 40vw */}
-            <div style={{ height: "20vw", width: "40vw" }} className="overflow-hidden rounded">
+            <div className="overflow-hidden rounded md:h-[40vh] md:w-[40vw] h-20vh w-20vw">
               <img
                 src="https://ik.imagekit.io/o3b14qow3gqi/Crew/sss_z642MOd4G.jpg?updatedAt=1647509408608"
                 alt="Faculty Advisor"
