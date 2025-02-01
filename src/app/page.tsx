@@ -7,7 +7,7 @@ import OurMission from "./Components/Home/mission";
 export default function Home() {
   return (
     
-      <div style={{ fontFamily: 'Nasalization, sans-serif' }}>
+      <div style={{ fontFamily: 'Striger, sans-serif' }}>
         <Navbar />      
           {/* <Main /> */}
           {/* <TracingBeam className="px-6"> */}

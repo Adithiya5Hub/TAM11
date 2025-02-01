@@ -20,7 +20,7 @@ export default function OurMission() {
             transition={{ duration: 1, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            Our Mission
+            Our Vision
           </motion.h1>
           <motion.p
             className="font-josefin text-lg md:text-xl text-gray-300 max-w-3xl mx-auto"

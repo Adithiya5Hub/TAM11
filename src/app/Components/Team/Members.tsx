@@ -270,21 +270,21 @@ export default function AnimatedTestimonialsDemo() {
   return(
     <>
      
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Nasalization, sans-serif' }}>Executives</h1>
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Executives</h1>
       <AnimatedTestimonials testimonials={Executives}/>;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Nasalization, sans-serif' }}>Events</h1>
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Events</h1>
       <AnimatedTestimonials testimonials={Events} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Nasalization, sans-serif' }}>Technical</h1>
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Technical</h1>
       <AnimatedTestimonials testimonials={Technical} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Nasalization, sans-serif' }}>Marketing</h1>
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Marketing</h1>
       <AnimatedTestimonials testimonials={Marketing} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Nasalization, sans-serif' }}>PR & Sales</h1>
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>PR & Sales</h1>
       <AnimatedTestimonials testimonials={PRSales} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Nasalization, sans-serif' }}>StageCrew</h1>
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>StageCrew</h1>
       <AnimatedTestimonials testimonials={StageCrew} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Nasalization, sans-serif' }}>Media</h1>
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Media</h1>
       <AnimatedTestimonials testimonials={Media} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Nasalization, sans-serif' }}>Theaters</h1>
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Theaters</h1>
       <AnimatedTestimonials testimonials={Theaters} />;
       
       </>

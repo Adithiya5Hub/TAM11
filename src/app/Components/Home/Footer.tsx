@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <div style={{ fontFamily: "Nasalization, sans-serif" }}>
+    <div style={{ fontFamily: "Striger, sans-serif" }}>
       <motion.footer
         className="flex flex-col space-y-10 justify-center m-10"
         initial={{ opacity: 0, y: 50 }} // Start below and invisible

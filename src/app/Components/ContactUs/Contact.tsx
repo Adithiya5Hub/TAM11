@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div style={{ fontFamily: 'Nasalization, sans-serif' }}>
+    <div style={{ fontFamily: 'Striger, sans-serif' }}>
       {/* Ensure no yellow light effect by removing unnecessary styles */}
       <div className="pb-40 py-12 pt-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-10 lg:px-8">
