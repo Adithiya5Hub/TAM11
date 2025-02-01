@@ -71,7 +71,7 @@ export default function StickyScrollRevealDemo() {
           >
             <h2 className="text-white font-bold md:text-[40px] sm:text-[30px] xs:text-[25px] text-[20px] mb-4">
               Dr. P. Santosh Kumar Patra
-              <motion.h1
+              <motion.div
                           className="font-boldern text-3xl md:text-3xl mb-8 bg-gradient-to-b from-red-200 to-red-800 bg-clip-text text-transparent"
                           initial={{ scale: 0.8, opacity: 0 }}
                           whileInView={{ scale: 1, opacity: 1 }}
@@ -79,7 +79,7 @@ export default function StickyScrollRevealDemo() {
                           viewport={{ once: true }}
                         >
                           Group Director
-                        </motion.h1>
+                        </motion.div>
             </h2>
             <p className="sm:text-[18px] text-[14px] text-white tracking-wider">
               Dr. P. Santosh Kumar Patra, Group Director of St. Martin's Engineering College, holds a B.E. in Computer Science & Engineering, an MTech in Computer Science & Engineering, and a Ph.D. in Computer Science & Engineering. His areas of interest are Artificial Intelligence, Software Engineering, Data Mining and Warehousing, and Wireless Networks.
@@ -105,7 +105,7 @@ export default function StickyScrollRevealDemo() {
           >
             <h2 className="text-white font-bold md:text-[40px] sm:text-[30px] xs:text-[25px] text-[20px] mb-4">
               E. Soumya
-              <motion.h1
+              <motion.div
                           className="font-boldern text-3xl md:text-3xl mb-8 bg-gradient-to-b from-red-200 to-red-800 bg-clip-text text-transparent"
                           initial={{ scale: 0.8, opacity: 0 }}
                           whileInView={{ scale: 1, opacity: 1 }}
@@ -113,7 +113,7 @@ export default function StickyScrollRevealDemo() {
                           viewport={{ once: true }}
                         >
                           Faculty Advisor
-                        </motion.h1>
+                        </motion.div>
             </h2>
             <p className="sm:text-[18px] text-[14px] text-white tracking-wider">
               Every great organization has a great team, and every great team needs a great Advisor. We, as a crew at TAM, have made it a point to ensure that every event is filled with a great deal of success, in addition to ensuring every participant is served with equal priority. From planning the events to marketing, to making our website, we make sure that we are meeting the needs of every participant.
