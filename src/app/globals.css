@@ -36,6 +36,40 @@ body {
   --background:  linear-gradient(to right, gray, white);
   --foreground:  linear-gradient(to right, gray, white);
 }
+/* Customize the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Dark background for the track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #be123c; /* Rose-700 color for the scrollbar handle */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #1a1a1a; /* Padding around the handle */
+}
+
+/* Customize the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9f1239; /* Darker rose color on hover */
+}
+
+/* Optional: Customize the scrollbar corner (where vertical and horizontal scrollbars meet) */
+::-webkit-scrollbar-corner {
+  background: #1a1a1a; /* Match the track color */
+}
+
+/* Firefox scrollbar customization */
+html {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #be123c #1a1a1a; /* thumb and track color */
+}
 @keyframes highlight {
   0% {
     opacity: 0;
