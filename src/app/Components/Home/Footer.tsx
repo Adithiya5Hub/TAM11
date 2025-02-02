@@ -15,7 +15,7 @@ const Footer = () => {
         {/* Links Section */}
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-5 bg-gray-50 bg-opacity-10 p-4 rounded-lg shadow-md">
           {/* Links Stacked Vertically on Small Screens */}
-          <div className="flex flex-col md:flex-row md:space-x-5 md:gap-20 text-white font-medium text-center md:text-left">
+          <div className="flex flex-col md:flex-row md:space-x-5 md:gap-20 gap-3 text-white font-medium text-center md:text-left">
             <a href="/TermsAndConditions" className="hover:text-rose-500 transition-colors duration-1 animate-highlight align-text-center">
               Terms and conditions
             </a>

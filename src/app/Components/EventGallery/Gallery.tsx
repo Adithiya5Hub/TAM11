@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { LayoutGrid } from "../ui/layout-grid";
+import Link from "next/link";
 
 export default function LayoutGridDemo() {
   return (
@@ -15,8 +16,9 @@ export default function LayoutGridDemo() {
 const SkeletonOne = () => {
   return (
     <div>
+      <Link href="https://drive.google.com/drive/folders/16RJwmuP1JXj64-7NEKlAWYVAuCSHXsK0?usp=drive_link">
       <p className="font-bold md:text-4xl text-xl text-white" style={{fontFamily:'Valorant_Font, sans-serif'}}>
-       <a href="https://drive.google.com/drive/folders/16RJwmuP1JXj64-7NEKlAWYVAuCSHXsK0?usp=drive_link" target="_blank">Opening Ceremony</a> 
+       Opening Ceremony 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
@@ -24,7 +26,7 @@ const SkeletonOne = () => {
 the fusion of technology and entertainment. It sets the stage with
 inspiring speeches and vibrant energy, highlighting TAM&apos;s vision to
 explore and share the latest global trends.
-      </p>
+      </p></Link>
     </div>
   );
 };
@@ -32,8 +34,9 @@ explore and share the latest global trends.
 const SkeletonTwo = () => {
   return (
     <div>
+      <Link href="https://drive.google.com/drive/folders/1nDNJWedMusUZvxeXoXL1zQkLMjbJ1B1l?usp=drive_link">
       <p className="font-bold md:text-4xl text-xl text-white"style={{fontFamily:'Valorant_Font, sans-serif'}}>
-       <a href="https://drive.google.com/drive/folders/1nDNJWedMusUZvxeXoXL1zQkLMjbJ1B1l?usp=drive_link">Entertainment Quiz</a> 
+       Entertainment Quiz 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
@@ -43,6 +46,7 @@ compete with others to prove you&apos;re the ultimate entertainment
 enthusiast!
 
       </p>
+      </Link>
     </div>
   );
 };
@@ -92,7 +96,7 @@ const cards = [
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "https://i.ibb.co/RG6Bpfk0/IMG-2476.jpg",
+      "https://i.ibb.co/mnGYTrB/freepik-enhance-23895.png",
   },
   {
     id: 3,

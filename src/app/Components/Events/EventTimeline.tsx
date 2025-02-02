@@ -270,15 +270,12 @@ const cards = [
     description: "Entertainment Quiz",
     title: "ENTERTAINMENT QUIZ",
     src: "https://i.ibb.co/bmPrcJs/entertainment-quiz.jpg",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/JsLYSTZuQsio2KV16",
+    ctaText: <span className="line-through">Register</span>,
+    ctaLink: "",
     content: () => {
       return (
         <p>
-          The Entertainment Quiz is a fun-filled challenge that dives into the
-          world of movies, music, and pop culture. Test your knowledge and
-          compete with others to prove you&apos;re the ultimate entertainment
-          enthusiast!
+          Entertainment Quiz has been successfully completed. Please Visit the Gallery for Photos.
         </p>
       );
     },

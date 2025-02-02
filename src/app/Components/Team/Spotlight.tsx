@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SpotlightPreview() {
   return (
-    <div className="h-[50rem] w-full rounded-md flex md:items-center md:justify-center  antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="md:h-[50rem] h-[30rem] w-full rounded-md flex items-center justify-center  antialiased bg-grid-white/[0.02] relative overflow-hidden">
       {/* <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"

@@ -1,7 +1,7 @@
 import React from "react";
 import Gallery from "@/app/Components/EventGallery/Gallery";
 import Navbar from "@/app/Components/Navbar";
-import Footer1 from "@/app/Components/Home/footer1";
+import Footer from "../Components/Home/Footer";
 
 export default function EventTimelinePage() {
   return (
@@ -9,7 +9,7 @@ export default function EventTimelinePage() {
       <Navbar />
       <Gallery />
       <div style={{ height: "100px" }}></div>
-      <Footer1 />
+      <Footer />
     </div>
   );
 }
