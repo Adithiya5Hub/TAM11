@@ -295,11 +295,7 @@ export default function AnimatedTestimonialsDemo() {
 
 
 
-// THEATRES HEAD:
 
-// Theatres Head is responsible for adding energy, entertainment, and dramatic flair to an organization's events, transforming them into memorable experiences. She oversees the creative direction of theatrical elements, the Theatres Head ensures the event captivates the audience, leaving a lasting impact. Her ability to infuse creativity and theatrical expertise elevates events, making them both entertaining and visually stunning.
-
-// THEATRES MEMBERS:
 
 
 
