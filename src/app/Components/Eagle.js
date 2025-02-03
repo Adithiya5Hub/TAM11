@@ -15,7 +15,7 @@ export default function Eagle({ keepHeadingVisible }) {
     <div className="container mt-[20vh] pt-[10vh] pb-[10vh] md:pt-[20vh] md:pb-[20vh]">
       {showEagle && (
         <img
-          src="https://i.ibb.co/VWk9Mdpm/favicon-removebg-preview.png"
+          src="https://i.ibb.co/9mkSMqKT/eagle-logo.png"
           alt="Eagle"
           className="eagle"
         />
