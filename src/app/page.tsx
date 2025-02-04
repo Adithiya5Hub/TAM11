@@ -3,7 +3,9 @@ import Navbar from "@/app/Components/Navbar";
 import Faculty from "@/app/Components/Home/Faculty"
 import Footer from "@/app/Components/Home/Footer";
 import OurMission from "./Components/Home/mission";
-import Eagle from "./Components/Eagle"
+import Overview from "./Components/Home/Overview";
+// import Events from "./Components/Home/Events";
+
 import { useEffect, useState } from "react";
 export default function Home() {
   const [animationFinished, setAnimationFinished] = useState(false);
@@ -21,25 +23,18 @@ export default function Home() {
     
       <div style={{ fontFamily: 'Striger, sans-serif' }}>
         <Navbar />      
-          {/* <Main /> */}
-          {/* <TracingBeam className="px-6"> */}
-          {/* <TracingBeam className="px-6"> */}
-          {/* <TracingBeam className="px-6"> */}
-          <Eagle keepHeadingVisible={animationFinished}/>
-          {animationFinished && (
-        <div
-          className={`transition-opacity duration-1000 opacity-0 ${
-            animationFinished ? "opacity-100" : ""
-          } pt-20`}
-        >
+          
+          <Overview />
+        
           <OurMission />
           <Faculty />
-          {/*<Events />*/}
+          {/* <Events /> */}
           {/* <FAQ /> */}
+          
           <Footer />
-          </div>
-      )}
-        {/* </TracingBeam> */}
+          
+     
+        
         
       </div>
     
