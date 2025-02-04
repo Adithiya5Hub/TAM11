@@ -284,15 +284,13 @@ const cards = [
     description: "Youth Parliament",
     title: "YOUTH PARLIAMENT",
     src: "https://i.ibb.co/vHDHf16/youthparliament.webp",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/pgifMxPGXkjkhxmc9",
+    ctaText: <span className="line-through">Register</span>,
+    ctaLink: "",
     content: () => {
       return (
         <p>
-          The Youth Parliament is a platform for young minds to debate, discuss,
-          and deliberate on pressing global and national issues. It empowers
-          participants to voice their perspectives, fostering leadership and
-          critical thinking skills.
+        Youth Parliament has been successfully completed. Please Visit the Gallery for Photos.
+
         </p>
       );
     },
