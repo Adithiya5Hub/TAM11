@@ -22,7 +22,7 @@ export default function Eagle({ keepHeadingVisible }) {
       )}
       {keepHeadingVisible && (
         <div className="heading text-6xl md:text-8xl font-bold text-center fade-in">
-          Technical Awareness Month
+          Technology Awareness Month
         </div>
       )}
     </div>
