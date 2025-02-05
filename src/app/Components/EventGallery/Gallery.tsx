@@ -53,16 +53,18 @@ enthusiast!
 const SkeletonThree = () => {
   return (
     <div>
+      <Link href="https://drive.google.com/drive/folders/1VP1rrF9hR0PgWjXWNi6uyQQ0XBZyZ20u?usp=sharing">
       <p className="font-bold md:text-4xl text-xl text-white" style={{fontFamily:'Valorant_Font, sans-serif'}}>
-       <a href="/event-timeline">Group Discussion</a> 
+       Youth Parliament 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      Group Discussion is a platform for young minds to debate, discuss,
-and deliberate on pressing global and national issues. It empowers
-participants to voice their perspectives, fostering leadership and critical
+      The Youth Parliament is a platform for young minds to debate, discuss, 
+and deliberate on pressing global and national issues. It empowers 
+participants to voice their perspectives, fostering leadership and critical 
 thinking skills.
       </p>
+      </Link>
     </div>
   );
 };
@@ -103,7 +105,7 @@ const cards = [
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1523582407565-efee5cf4a353?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGdyb3VwJTIwZGlzY3Vzc2lvbnxlbnwwfHwwfHx8MA%3D%3D",
+      "https://i.ibb.co/N20H91cZ/DSCF3492.jpg",
   },
   {
     id: 4,
