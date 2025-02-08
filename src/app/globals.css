@@ -257,3 +257,27 @@ body {
     transform: translateY(0);
   }
 }
+  /* Change the color of navigation arrows */
+  .swiper-button-next, .swiper-button-prev {
+    color: transparent !important;
+    background: linear-gradient(to bottom, #f87171, #7f1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+  }
+
+  /* Change the color of pagination bullets */
+  .swiper-pagination-bullet {
+    background: #f87171 !important; /* Light Red */
+  }
+
+  /* Active pagination bullet */
+  .swiper-pagination-bullet-active {
+    background: #b91c1c !important; /* Darker Red */
+    transform: scale(1.2);
+  }
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    color: darkred; /* Darker red on hover */
+  }
+  

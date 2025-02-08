@@ -1,5 +1,11 @@
-"use client"
+"use client";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { AnimatedTestimonials } from "@/app/Components/ui/animated-testimonials";
+import { color } from 'framer-motion';
 
 export default function AnimatedTestimonialsDemo() {
   const Executives = [
@@ -269,26 +275,164 @@ export default function AnimatedTestimonialsDemo() {
   
   return(
     <>
-     
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Executives</h1>
-      <AnimatedTestimonials testimonials={Executives}/>;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Events</h1>
-      <AnimatedTestimonials testimonials={Events} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Technical</h1>
-      <AnimatedTestimonials testimonials={Technical} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Marketing</h1>
-      <AnimatedTestimonials testimonials={Marketing} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>PR & Sales</h1>
-      <AnimatedTestimonials testimonials={PRSales} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>StageCrew</h1>
-      <AnimatedTestimonials testimonials={StageCrew} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Media</h1>
-      <AnimatedTestimonials testimonials={Media} />;
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"style={{ fontFamily: 'Striger, sans-serif' }}>Theaters</h1>
-      <AnimatedTestimonials testimonials={Theaters} />;
-      
+    <div className="max-w-screen-lg pb-[20vh] mx-auto">
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center" style={{ fontFamily: 'Striger, sans-serif' }}>Executives</h1>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {Executives.map((member, index) => (
+          <SwiperSlide key={index}>
+            <AnimatedTestimonials testimonials={[member]} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      </div>
+      <div className="max-w-screen-lg pb-[20vh] mx-auto">
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center" style={{ fontFamily: 'Striger, sans-serif' }}>Events</h1>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {Events.map((member, index) => (
+          <SwiperSlide key={index}>
+            <AnimatedTestimonials testimonials={[member]} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      </div>
+      <div className="max-w-screen-lg pb-[20vh] mx-auto">
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center" style={{ fontFamily: 'Striger, sans-serif' }}>Technical</h1>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {Technical.map((member, index) => (
+          <SwiperSlide key={index}>
+            <AnimatedTestimonials testimonials={[member]} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      </div>
+      <div className="max-w-screen-lg pb-[20vh] mx-auto">
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center" style={{ fontFamily: 'Striger, sans-serif' }}>Marketing</h1>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {Marketing.map((member, index) => (
+          <SwiperSlide key={index}>
+            <AnimatedTestimonials testimonials={[member]} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      </div>
+      <div className="max-w-screen-lg pb-[20vh] mx-auto">
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center" style={{ fontFamily: 'Striger, sans-serif' }}>PR and Sales</h1>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {PRSales.map((member, index) => (
+          <SwiperSlide key={index}>
+            <AnimatedTestimonials testimonials={[member]} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      </div>
+      <div className="max-w-screen-lg pb-[20vh] mx-auto">
+
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center" style={{ fontFamily: 'Striger, sans-serif' }}>Stage Crew</h1>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {StageCrew.map((member, index) => (
+          <SwiperSlide key={index}>
+            <AnimatedTestimonials testimonials={[member]} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      </div>
+      <div className="max-w-screen-lg pb-[20vh] mx-auto">
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center" style={{ fontFamily: 'Striger, sans-serif' }}>Media</h1>
+      <Swiper
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {Media.map((member, index) => (
+          <SwiperSlide key={index}>
+            <AnimatedTestimonials testimonials={[member]} />
+          </SwiperSlide>
+        ))}
+        </Swiper>
+      </div>
+      <div className="max-w-screen-lg pb-[20vh] mx-auto">
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center" style={{ fontFamily: 'Striger, sans-serif' }}>Theaters</h1>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {Theaters.map((member, index) => (
+          <SwiperSlide key={index}>
+            <AnimatedTestimonials testimonials={[member]} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      </div>
       </>
-    
   ) ;
 }
 
