@@ -267,6 +267,22 @@ export const CloseIcon = () => {
 
 const cards = [
   {
+    description: "Gaming Event",
+    title: "ESPORTS SAGA",
+    src: "https://i.ibb.co/NLLtqtb/esports.jpg",
+    ctaText: "Register",
+    ctaLink: "https://forms.gle/RtS8Qs8UB2Ly7ZA36",
+    content: () => {
+      return (
+        <p>
+          Esports Saga is a competitive gaming event that brings together players
+          to showcase their skills in a series of popular gaming tournaments.
+          Join us for an exciting day of gaming, fun, and prizes!
+        </p>
+      );
+    },
+  },
+  {
     description: "Entertainment Quiz",
     title: "ENTERTAINMENT QUIZ",
     src: "https://i.ibb.co/bmPrcJs/entertainment-quiz.jpg",
@@ -309,22 +325,7 @@ const cards = [
       );
     },
   },
-  {
-    description: "Gaming Event",
-    title: "ESPORTS SAGA",
-    src: "https://i.ibb.co/NLLtqtb/esports.jpg",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/RtS8Qs8UB2Ly7ZA36",
-    content: () => {
-      return (
-        <p>
-          Esports Saga is a competitive gaming event that brings together players
-          to showcase their skills in a series of popular gaming tournaments.
-          Join us for an exciting day of gaming, fun, and prizes!
-        </p>
-      );
-    },
-  },
+  
   {
     description: "Ideathon",
     title: "IDEATHON",
