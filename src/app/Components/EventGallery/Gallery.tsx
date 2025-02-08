@@ -71,16 +71,18 @@ thinking skills.
 const SkeletonFour = () => {
   return (
     <div>
+      <Link href="https://drive.google.com/drive/folders/1DzCR191ids1Gz98LGE0ZR_oWtEms1wpH?usp=sharing">
       <p className="font-bold md:text-4xl text-xl text-white" style={{fontFamily:'Valorant_Font, sans-serif'}}>
-       <a href="/event-timeline">Podcast</a> 
+       Podcast
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      The Podcast series brings insightful conversations with experts, thought
-leaders, and influencers, covering the latest trends in technology,
-entertainment, and culture. Tune in for discussions that spark curiosity
+      The podcast series brings insightful conversations with experts, thought 
+leaders, and influencers, covering the latest trends in technology, 
+entertainment, and culture. Tune in for discussions that spark curiosity 
 and broaden perspectives.
       </p>
+      </Link>
     </div>
   );
 };
@@ -112,6 +114,6 @@ const cards = [
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1561489404-42f13a2f09a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHNlbWluYXJ8ZW58MHx8MHx8fDA%3D",
+      "https://i.ibb.co/VpjSLCGn/IMG-3029.jpg",
   },
 ];
