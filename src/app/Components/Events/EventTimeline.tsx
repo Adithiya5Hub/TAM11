@@ -270,7 +270,7 @@ const cards = [
     description: "Entertainment Quiz",
     title: "ENTERTAINMENT QUIZ",
     src: "https://i.ibb.co/bmPrcJs/entertainment-quiz.jpg",
-    ctaText: <span className="line-through">Register</span>,
+    ctaText: "Done",
     ctaLink: "",
     content: () => {
       return (
@@ -284,7 +284,7 @@ const cards = [
     description: "Youth Parliament",
     title: "YOUTH PARLIAMENT",
     src: "https://i.ibb.co/vHDHf16/youthparliament.webp",
-    ctaText: <span className="line-through">Register</span>,
+    ctaText:"Done",
     ctaLink: "",
     content: () => {
       return (
@@ -299,15 +299,12 @@ const cards = [
     description: "Podcast",
     title: "PODCAST",
     src: "https://i.ibb.co/R3GqDqq/podcast.png",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/bu2cVPonSiiKbVXF9",
+    ctaText: "Done",
+    ctaLink: "",
     content: () => {
       return (
         <p>
-          The podcast series brings insightful conversations with experts, thought
-          leaders, and influencers, covering the latest trends in technology,
-          entertainment, and culture. Tune in for discussions that spark curiosity
-          and broaden perspectives.
+          THe podcast has been successfully completed. Please Visit the Gallery for Photos.
         </p>
       );
     },
@@ -323,8 +320,7 @@ const cards = [
         <p>
           Esports Saga is a competitive gaming event that brings together players
           to showcase their skills in a series of popular gaming tournaments.
-          Participants compete in an engaging and dynamic environment,
-          celebrating the exciting world of e-sports.
+          Join us for an exciting day of gaming, fun, and prizes!
         </p>
       );
     },
