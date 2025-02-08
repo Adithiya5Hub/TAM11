@@ -72,11 +72,11 @@ const SkeletonFour = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white" style={{fontFamily:'Valorant_Font, sans-serif'}}>
-       <a href="/event-timeline">Talkshow</a> 
+       <a href="/event-timeline">Podcast</a> 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      The Talkshow series brings insightful conversations with experts, thought
+      The Podcast series brings insightful conversations with experts, thought
 leaders, and influencers, covering the latest trends in technology,
 entertainment, and culture. Tune in for discussions that spark curiosity
 and broaden perspectives.
