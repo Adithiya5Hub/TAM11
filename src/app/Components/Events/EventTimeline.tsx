@@ -345,6 +345,55 @@ const cards = [
     },
   },
   {
+    description: "Quiz",
+    title: "General Quiz",
+    src: "https://i.ibb.co/4gfM58b1/gq.webp",
+    ctaText: "Register",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+          Get ready to challenge your knowledge and quick thinking in our thrilling General Quiz Event! From history to science, sports to entertainment, test your skills across a variety of topics. Compete, have fun, and claim the title of Quiz Champion!
+          Are you up for the challenge? Register Now!
+        </p>
+      );
+    },
+  },
+  {
+    description: "World Cafe",
+    title: "TAM X AIESEC World Cafe ",
+    src: "https://i.ibb.co/YFNR3J36/world-cafe.webp",
+    ctaText: "Register",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+          The NexGen Front End Workshop is a UI/UX-focused session designed
+          to equip participants with the skills to create intuitive and visually
+          captivating user interfaces. This workshop covers industry-standard
+          tools and techniques to craft seamless and engaging user experiences.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Quiz",
+    title: "TAM X KQZ Quiz",
+    src: "https://i.ibb.co/mCy6ffV7/kqz.webp",
+    ctaText: "Register",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+          The NexGen Front End Workshop is a UI/UX-focused session designed
+          to equip participants with the skills to create intuitive and visually
+          captivating user interfaces. This workshop covers industry-standard
+          tools and techniques to craft seamless and engaging user experiences.
+        </p>
+      );
+    },
+  },
+  {
     description: "Bootcamp",
     title: "THE DATA DOJO",
     src: "https://i.ibb.co/mcDbQpR/Data-analytics.jpg",
@@ -353,12 +402,9 @@ const cards = [
     content: () => {
       return (
         <p>
-          This workshop provides an introduction to the fundamentals of data
-          analytics, including data cleaning, analysis, and visualization.
-          Participants will work with real-world datasets, learn to identify trends,
-          and create impactful reports to support decision-making. The session is
-          designed to equip attendees with practical skills for solving real-world
-          problems in the data analytics domain.
+          Unlock the Power of Data! 🔍📊
+          Dive into the world of Data Analytics with this hands-on workshop! Learn to clean, analyze, and visualize real-world data, uncover hidden trends, and create impactful reports that drive smart decisions. Gain practical skills to solve real-world problems and supercharge your career in analytics! 🚀✨
+          Don’t just explore data—turn it into insights!🔥 Join us now!!
         </p>
       );
     },
@@ -372,10 +418,9 @@ const cards = [
     content: () => {
       return (
         <p>
-          The NexGen Front End Workshop is a UI/UX-focused session designed
-          to equip participants with the skills to create intuitive and visually
-          captivating user interfaces. This workshop covers industry-standard
-          tools and techniques to craft seamless and engaging user experiences.
+          NexGen Front-End Workshop: Design. Develop. Dazzle! 🎨🚀
+          Master the art of UI/UX in this hands-on workshop! Learn to create stunning, intuitive, and seamless user interfaces using industry-leading tools and techniques. Elevate your front-end skills and craft engaging digital experiences that captivate users! ✨🔥 
+          Design smarter. Build better. Impress always! 💡🎯
         </p>
       );
     },
