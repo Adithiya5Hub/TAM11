@@ -5,7 +5,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { AnimatedTestimonials } from "@/app/Components/ui/animated-testimonials";
-import { color } from 'framer-motion';
 
 export default function AnimatedTestimonialsDemo() {
   const Executives = [
