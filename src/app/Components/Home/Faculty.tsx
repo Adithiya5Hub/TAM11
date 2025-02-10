@@ -131,7 +131,7 @@ export default function StickyScrollRevealDemo() {
             {/* Container with height and width of 40vw */}
             <div className="overflow-hidden rounded md:h-[40vh] md:w-[40vw] h-20vh w-20vw">
               <img
-                src="https://ik.imagekit.io/o3b14qow3gqi/Crew/sss_z642MOd4G.jpg?updatedAt=1647509408608"
+                src="https://i.ibb.co/2Y7CHxWW/FA1.png"
                 alt="Faculty Advisor"
                 className="object-cover w-full h-full"
               />
