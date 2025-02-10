@@ -34,7 +34,7 @@ export default function AnimatedTestimonialsDemo() {
         "Financial Advisor provides expert advice on managing financial resources, investments, and budgeting. He help guide decision-making by analyzing financial data and assessing risks. His role is crucial in helping the TAM and make informed financial choices to achieve growth and stability.",
       name: "Aashrith Sarma",
       designation: "FINANCIAL ADVISOR",
-      src: "https://i.ibb.co/9V0bzsf/Aashrith.jpg",
+      src: "https://i.ibb.co/1t5h0ZYV/DSCF1964.jpg",
     },
     
   ];
@@ -169,7 +169,7 @@ export default function AnimatedTestimonialsDemo() {
       "They identify potential sponsors, negotiate partnerships, and ensure that sponsorships align with TAM’s values and goals. They plan publicity campaigns and respond to inquiries. They also make sure to drive sales.",
       name: "Sravan",
       designation: "PR & SALES MEMBER",
-      src: "https://i.ibb.co/vxhZrn5/Sravan.jpg",
+      src: "https://i.ibb.co/LDk4YStd/Sravan.jpg",
     },
     {
       quote:
@@ -293,7 +293,7 @@ export default function AnimatedTestimonialsDemo() {
         ))}
       </Swiper>
       </div>
-      <div className="max-w-screen-lg pb-[20vh] mx-auto">
+      <div className="max-w-screen-lg pb-[20vh] mx-auto ">
       <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center" style={{ fontFamily: 'Striger, sans-serif' }}>Events</h1>
       <Swiper
         spaceBetween={30}
@@ -344,6 +344,7 @@ export default function AnimatedTestimonialsDemo() {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
+        style={{fontFamily:'Valorant_Font, sans-serif'}}
       >
         {Marketing.map((member, index) => (
           <SwiperSlide key={index}>
@@ -388,7 +389,7 @@ export default function AnimatedTestimonialsDemo() {
       >
         {StageCrew.map((member, index) => (
           <SwiperSlide key={index}>
-            <AnimatedTestimonials testimonials={[member]} />
+            <AnimatedTestimonials testimonials={[member]}  />
           </SwiperSlide>
         ))}
       </Swiper>
