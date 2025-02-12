@@ -66,6 +66,17 @@ const Footer = () => {
               alt="Google Forms"
             />
           </a>
+          <a
+            href="https://www.linkedin.com/company/technologyawarenessmonth/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png"
+              className="h-10 w-10 hover:scale-125 transition-transform duration-300"
+              alt="Linkedin"
+            />
+          </a>
         </div>
 
         {/* Copyright Text */}
