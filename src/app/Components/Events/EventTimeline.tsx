@@ -146,13 +146,23 @@ export default function EventTimeline() {
 
       <div className="max-w-2xl mx-auto w-full">
         {cards.map((card, index) => (
-          <TimelineCard
-            key={`card-${card.title}-${id}`}
-            card={card}
-            index={index}
-            setActive={setActive}
-            id={id}
-          />
+          <React.Fragment key={`card-${card.title}-${id}`}>
+            <TimelineCard
+              card={card}
+              index={index}
+              setActive={setActive}
+              id={id}
+            />
+            {/* Add the heading after the Podcast card */}
+            {card.title === "PODCAST" && (
+              <h4
+                className="pt-[10vh] bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] text-center xs:text-[40px] text-[30px] animate-popIn"
+                style={{ fontFamily: "Striger, sans-serif" }}
+              >
+                Cycle 2 begins
+              </h4>
+            )}
+          </React.Fragment>
         ))}
       </div>
     </>
@@ -181,7 +191,7 @@ const TimelineCard = ({
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
     if (ref.current) {
@@ -203,7 +213,7 @@ const TimelineCard = ({
       className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
       initial={{ opacity: 0, y: 50 }}
       animate={isVisible ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.5, delay: index * 0.2 }}
+      transition={{ duration: 0.3, delay: index * 0.2 }}
     >
       <div className="flex gap-4 flex-col md:flex-row">
         <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -284,13 +294,12 @@ const cards = [
     description: "Youth Parliament",
     title: "YOUTH PARLIAMENT",
     src: "https://i.ibb.co/vHDHf16/youthparliament.webp",
-    ctaText:"Done",
+    ctaText: "Done",
     ctaLink: "",
     content: () => {
       return (
         <p>
-        Youth Parliament has been successfully completed. Please Visit the Gallery for Photos.
-
+          Youth Parliament has been successfully completed. Please Visit the Gallery for Photos.
         </p>
       );
     },
@@ -304,24 +313,64 @@ const cards = [
     content: () => {
       return (
         <p>
-          THe podcast has been successfully completed. Please Visit the Gallery for Photos.
+          The podcast has been successfully completed. Please Visit the Gallery for Photos.
         </p>
       );
     },
   },
-  
   {
-    description: "Gaming Event",
-    title: "ESPORTS SAGA",
-    src: "https://i.ibb.co/NLLtqtb/esports.jpg",
+    description: "Quiz",
+    title: "General Quiz",
+    src: "https://i.ibb.co/4gfM58b1/gq.webp",
     ctaText: "Register",
-    ctaLink: "https://forms.gle/RtS8Qs8UB2Ly7ZA36",
+    ctaLink: "",
     content: () => {
       return (
         <p>
-          Esports Saga is a competitive gaming event that brings together players
-          to showcase their skills in a series of popular gaming tournaments.
-          Join us for an exciting day of gaming, fun, and prizes!
+          Get ready to challenge your knowledge and quick thinking in our thrilling General Quiz Event! From history to science, sports to entertainment, test your skills across a variety of topics. Compete, have fun, and claim the title of Quiz Champion!
+          Are you up for the challenge? Register Now!
+        </p>
+      );
+    },
+  },
+  {
+    description: "Youth Parliament",
+    title: "Youth Parliament C-2",
+    src: "https://i.ibb.co/vHDHf16/youthparliament.webp",
+    ctaText: "Register",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+          Youth Parliament has been successfully completed. Please Visit the Gallery for Photos.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Group Discussion",
+    title: "TAM X AIESEC World Cafe",
+    src: "https://i.ibb.co/YFNR3J36/world-cafe.webp",
+    ctaText: "Register",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+          Join us for a lively group discussion on [topic]! Share ideas, spark conversations, and gain fresh perspectives in a fun, engaging space. Don’t just listen—jump in and be part of the discussion. See you there!
+        </p>
+      );
+    },
+  },
+  {
+    description: "Podcast",
+    title: "PODCAST C-2",
+    src: "https://i.ibb.co/R3GqDqq/podcast.png",
+    ctaText: "Register",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+          Join us on our podcast for fun, insightful conversations and fresh perspectives. Tune in and be part of the discussion!
         </p>
       );
     },
@@ -346,50 +395,17 @@ const cards = [
     },
   },
   {
-    description: "Quiz",
-    title: "General Quiz",
-    src: "https://i.ibb.co/4gfM58b1/gq.webp",
+    description: "Workshop",
+    title: "UI/UX WORKSHOP",
+    src: "https://i.ibb.co/wsN3S74/Workshop.jpg",
     ctaText: "Register",
-    ctaLink: "",
+    ctaLink: "https://forms.gle/1KbV2nhcmdykuZHG6",
     content: () => {
       return (
         <p>
-          Get ready to challenge your knowledge and quick thinking in our thrilling General Quiz Event! From history to science, sports to entertainment, test your skills across a variety of topics. Compete, have fun, and claim the title of Quiz Champion!
-          Are you up for the challenge? Register Now!
-        </p>
-      );
-    },
-  },
-  {
-    description: "World Cafe",
-    title: "TAM X AIESEC World Cafe ",
-    src: "https://i.ibb.co/YFNR3J36/world-cafe.webp",
-    ctaText: "Register",
-    ctaLink: "",
-    content: () => {
-      return (
-        <p>
-          The NexGen Front End Workshop is a UI/UX-focused session designed
-          to equip participants with the skills to create intuitive and visually
-          captivating user interfaces. This workshop covers industry-standard
-          tools and techniques to craft seamless and engaging user experiences.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Quiz",
-    title: "TAM X KQZ Quiz",
-    src: "https://i.ibb.co/mCy6ffV7/kqz.webp",
-    ctaText: "Register",
-    ctaLink: "",
-    content: () => {
-      return (
-        <p>
-          The NexGen Front End Workshop is a UI/UX-focused session designed
-          to equip participants with the skills to create intuitive and visually
-          captivating user interfaces. This workshop covers industry-standard
-          tools and techniques to craft seamless and engaging user experiences.
+          NexGen Front-End Workshop: Design. Develop. Dazzle! 🎨🚀
+          Master the art of UI/UX in this hands-on workshop! Learn to create stunning, intuitive, and seamless user interfaces using industry-leading tools and techniques. Elevate your front-end skills and craft engaging digital experiences that captivate users! ✨🔥 
+          Design smarter. Build better. Impress always! 💡🎯
         </p>
       );
     },
@@ -411,17 +427,17 @@ const cards = [
     },
   },
   {
-    description: "Workshop",
-    title: "UI/UX WORKSHOP",
-    src: "https://i.ibb.co/wsN3S74/Workshop.jpg",
+    description: "Gaming Event",
+    title: "ESPORTS SAGA",
+    src: "https://i.ibb.co/NLLtqtb/esports.jpg",
     ctaText: "Register",
-    ctaLink: "https://forms.gle/1KbV2nhcmdykuZHG6",
+    ctaLink: "https://forms.gle/RtS8Qs8UB2Ly7ZA36",
     content: () => {
       return (
         <p>
-          NexGen Front-End Workshop: Design. Develop. Dazzle! 🎨🚀
-          Master the art of UI/UX in this hands-on workshop! Learn to create stunning, intuitive, and seamless user interfaces using industry-leading tools and techniques. Elevate your front-end skills and craft engaging digital experiences that captivate users! ✨🔥 
-          Design smarter. Build better. Impress always! 💡🎯
+          Esports Saga is a competitive gaming event that brings together players
+          to showcase their skills in a series of popular gaming tournaments.
+          Join us for an exciting day of gaming, fun, and prizes!
         </p>
       );
     },
