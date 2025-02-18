@@ -323,7 +323,7 @@ const cards = [
     title: "General Quiz",
     src: "https://i.ibb.co/4gfM58b1/gq.webp",
     ctaText: "Register",
-    ctaLink: "",
+    ctaLink: "https://forms.gle/ViK9ZRe86zr8vxmE9  ",
     content: () => {
       return (
         <p>
