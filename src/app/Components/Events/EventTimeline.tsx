@@ -154,14 +154,7 @@ export default function EventTimeline() {
               id={id}
             />
             {/* Add the heading after the Podcast card */}
-            {card.title === "PODCAST" && (
-              <h4
-                className="pt-[10vh] bg-clip-text text-transparent bg-gradient-to-b from-red-200 to-red-800 bg-opacity-50 font-bold md:text-[60px] sm:text-[50px] text-center xs:text-[40px] text-[30px] animate-popIn"
-                style={{ fontFamily: "Striger, sans-serif" }}
-              >
-                Cycle 2 begins
-              </h4>
-            )}
+            
           </React.Fragment>
         ))}
       </div>
@@ -276,48 +269,7 @@ export const CloseIcon = () => {
 };
 
 const cards = [
-  {
-    description: "Entertainment Quiz",
-    title: "ENTERTAINMENT QUIZ",
-    src: "https://i.ibb.co/bmPrcJs/entertainment-quiz.jpg",
-    ctaText: "Done",
-    ctaLink: "",
-    content: () => {
-      return (
-        <p>
-          Entertainment Quiz has been successfully completed. Please Visit the Gallery for Photos.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Youth Parliament",
-    title: "YOUTH PARLIAMENT",
-    src: "https://i.ibb.co/vHDHf16/youthparliament.webp",
-    ctaText: "Done",
-    ctaLink: "",
-    content: () => {
-      return (
-        <p>
-          Youth Parliament has been successfully completed. Please Visit the Gallery for Photos.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Podcast",
-    title: "PODCAST",
-    src: "https://i.ibb.co/R3GqDqq/podcast.png",
-    ctaText: "Done",
-    ctaLink: "",
-    content: () => {
-      return (
-        <p>
-          The podcast has been successfully completed. Please Visit the Gallery for Photos.
-        </p>
-      );
-    },
-  },
+  
   {
     description: "Quiz",
     title: "General Quiz",
@@ -335,7 +287,7 @@ const cards = [
   },
   {
     description: "Youth Parliament",
-    title: "Youth Parliament C-2",
+    title: "Youth Parliament",
     src: "https://i.ibb.co/vHDHf16/youthparliament.webp",
     ctaText: "Register",
     ctaLink: "https://forms.gle/w89Gg9P6essdMV9D9",
@@ -363,7 +315,7 @@ const cards = [
   },
   {
     description: "Podcast",
-    title: "PODCAST C-2",
+    title: "PODCAST",
     src: "https://i.ibb.co/R3GqDqq/podcast.png",
     ctaText: "Register",
     ctaLink: "https://forms.gle/PnBrgPUT6P8zyJCr8",
