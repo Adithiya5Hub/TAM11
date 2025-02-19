@@ -294,8 +294,11 @@ const cards = [
     content: () => {
       return (
         <p>
-          Youth Parliament has been successfully completed. Please Visit the Gallery for Photos.
-        </p>
+      The Youth Parliament is a platform for young minds to debate, discuss, 
+      and deliberate on pressing global and national issues. It empowers 
+      participants to voice their perspectives, fostering leadership and critical 
+      thinking skills.        
+</p>
       );
     },
   },
@@ -355,7 +358,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          NexGen Front-End Workshop: Design. Develop. Dazzle! 🎨🚀
+          UI/UX Workshop: Design. Develop. Dazzle! 🎨🚀
           Master the art of UI/UX in this hands-on workshop! Learn to create stunning, intuitive, and seamless user interfaces using industry-leading tools and techniques. Elevate your front-end skills and craft engaging digital experiences that captivate users! ✨🔥 
           Design smarter. Build better. Impress always! 💡🎯
         </p>
