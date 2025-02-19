@@ -338,7 +338,7 @@ const cards = [
     title: "Youth Parliament C-2",
     src: "https://i.ibb.co/vHDHf16/youthparliament.webp",
     ctaText: "Register",
-    ctaLink: "",
+    ctaLink: "https://forms.gle/w89Gg9P6essdMV9D9",
     content: () => {
       return (
         <p>
@@ -366,7 +366,7 @@ const cards = [
     title: "PODCAST C-2",
     src: "https://i.ibb.co/R3GqDqq/podcast.png",
     ctaText: "Register",
-    ctaLink: "",
+    ctaLink: "https://forms.gle/PnBrgPUT6P8zyJCr8",
     content: () => {
       return (
         <p>
@@ -399,7 +399,7 @@ const cards = [
     title: "UI/UX WORKSHOP",
     src: "https://i.ibb.co/wsN3S74/Workshop.jpg",
     ctaText: "Register",
-    ctaLink: "https://forms.gle/1KbV2nhcmdykuZHG6",
+    ctaLink: "https://forms.gle/QEzmLyJW5b5rC2rV7",
     content: () => {
       return (
         <p>
@@ -415,7 +415,7 @@ const cards = [
     title: "THE DATA DOJO",
     src: "https://i.ibb.co/mcDbQpR/Data-analytics.jpg",
     ctaText: "Register",
-    ctaLink: "https://forms.gle/8z2N73E4J1vibFGXA",
+    ctaLink: "https://forms.gle/bDyP6xnqGf8ZKiuA9",
     content: () => {
       return (
         <p>
@@ -431,7 +431,7 @@ const cards = [
     title: "ESPORTS SAGA",
     src: "https://i.ibb.co/NLLtqtb/esports.jpg",
     ctaText: "Register",
-    ctaLink: "https://forms.gle/RtS8Qs8UB2Ly7ZA36",
+    ctaLink: "https://forms.gle/QvbKox6EkmHVWy1m6",
     content: () => {
       return (
         <p>
