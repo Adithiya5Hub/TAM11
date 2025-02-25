@@ -299,20 +299,7 @@ const cards = [
       );
     },
   },
-  {
-    description: "Group Discussion",
-    title: "TAM X AIESEC World Cafe",
-    src: "https://i.ibb.co/YFNR3J36/world-cafe.webp",
-    ctaText: "Register",
-    ctaLink: "",
-    content: () => {
-      return (
-        <p>
-          Join us for a lively group discussion on [topic]! Share ideas, spark conversations, and gain fresh perspectives in a fun, engaging space. Don’t just listen—jump in and be part of the discussion. See you there!
-        </p>
-      );
-    },
-  },
+
   {
     description: "Podcast",
     title: "PODCAST",
