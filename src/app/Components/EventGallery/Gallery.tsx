@@ -16,16 +16,14 @@ export default function LayoutGridDemo() {
 const SkeletonOne = () => {
   return (
     <div>
-      <Link href="https://drive.google.com/drive/folders/16RJwmuP1JXj64-7NEKlAWYVAuCSHXsK0?usp=drive_link">
+      <Link href="https://drive.google.com/drive/folders/1AhHUyq70lft3gPvRJ6ThkMV7fkW0_DAP" target="_blank">
       <p className="font-bold md:text-4xl text-xl text-white" style={{fontFamily:'Valorant_Font, sans-serif'}}>
-       Opening Ceremony 
+       General Quiz 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      The inauguration ceremony marks the grand opening of TAM&apos;s month long journey, bringing together students and enthusiasts to celebrate
-the fusion of technology and entertainment. It sets the stage with
-inspiring speeches and vibrant energy, highlighting TAM&apos;s vision to
-explore and share the latest global trends.
+      The General Quiz is a fun-filled challenge that dives into the 
+world from history to science, sports to entertainment. 
       </p></Link>
     </div>
   );
@@ -34,7 +32,7 @@ explore and share the latest global trends.
 const SkeletonTwo = () => {
   return (
     <div>
-      <Link href="https://drive.google.com/drive/folders/1nDNJWedMusUZvxeXoXL1zQkLMjbJ1B1l?usp=drive_link">
+      <Link href="https://drive.google.com/drive/folders/1nDNJWedMusUZvxeXoXL1zQkLMjbJ1B1l?usp=drive_link" target="_blank">
       <p className="font-bold md:text-4xl text-xl text-white"style={{fontFamily:'Valorant_Font, sans-serif'}}>
        Entertainment Quiz 
       </p>
@@ -53,7 +51,7 @@ enthusiast!
 const SkeletonThree = () => {
   return (
     <div>
-      <Link href="https://drive.google.com/drive/folders/1VP1rrF9hR0PgWjXWNi6uyQQ0XBZyZ20u?usp=sharing">
+      <Link href="https://drive.google.com/drive/folders/1VP1rrF9hR0PgWjXWNi6uyQQ0XBZyZ20u?usp=sharing" target="_blank">
       <p className="font-bold md:text-4xl text-xl text-white" style={{fontFamily:'Valorant_Font, sans-serif'}}>
        Youth Parliament 
       </p>
@@ -71,7 +69,7 @@ thinking skills.
 const SkeletonFour = () => {
   return (
     <div>
-      <Link href="https://drive.google.com/drive/folders/1DzCR191ids1Gz98LGE0ZR_oWtEms1wpH?usp=sharing">
+      <Link href="https://drive.google.com/drive/folders/1DzCR191ids1Gz98LGE0ZR_oWtEms1wpH?usp=sharing" target="_blank">
       <p className="font-bold md:text-4xl text-xl text-white" style={{fontFamily:'Valorant_Font, sans-serif'}}>
        Podcast
       </p>
@@ -93,7 +91,7 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "https://i.ibb.co/Z6BgXDzP/IMG-2299.jpg",
+      "https://i.ibb.co/W4qz2P5Z/DSCF3694.jpg",
   },
   {
     id: 2,
