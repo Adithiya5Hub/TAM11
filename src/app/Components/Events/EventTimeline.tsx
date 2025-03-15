@@ -271,65 +271,22 @@ export const CloseIcon = () => {
 const cards = [
   
   {
-    description: "Quiz",
-    title: "General Quiz",
-    src: "https://i.ibb.co/4gfM58b1/gq.webp",
+    description: "Gaming Event",
+    title: "ESPORTS SAGA",
+    src: "https://i.ibb.co/NLLtqtb/esports.jpg",
     ctaText: "Register",
-    ctaLink: "https://forms.gle/ViK9ZRe86zr8vxmE9  ",
+    ctaLink: "https://forms.gle/QvbKox6EkmHVWy1m6",
     content: () => {
       return (
         <p>
-          Get ready to challenge your knowledge and quick thinking in our thrilling General Quiz Event! From history to science, sports to entertainment, test your skills across a variety of topics. Compete, have fun, and claim the title of Quiz Champion!
-          Are you up for the challenge? Register Now!
+          Esports Saga is a competitive gaming event that brings together players
+          to showcase their skills in a series of popular gaming tournaments.
+          Join us for an exciting day of gaming, fun, and prizes!
         </p>
       );
     },
   },
-  {
-    description: "Youth Parliament",
-    title: "Youth Parliament",
-    src: "https://i.ibb.co/vHDHf16/youthparliament.webp",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/w89Gg9P6essdMV9D9",
-    content: () => {
-      return (
-        <p>
-      The Youth Parliament is a platform for young minds to debate, discuss, 
-      and deliberate on pressing global and national issues. It empowers 
-      participants to voice their perspectives, fostering leadership and critical 
-      thinking skills.        
-</p>
-      );
-    },
-  },
-  {
-    description: "Group Discussion",
-    title: "TAM X AIESEC World Cafe",
-    src: "https://i.ibb.co/YFNR3J36/world-cafe.webp",
-    ctaText: "Register",
-    ctaLink: "",
-    content: () => {
-      return (
-        <p>
-          Join us for a lively group discussion on [topic]! Share ideas, spark conversations, and gain fresh perspectives in a fun, engaging space. Don’t just listen—jump in and be part of the discussion. See you there!
-        </p>
-      );
-    },
-  },
-  {
-    description: "Podcast",
-    title: "PODCAST",
-    src: "https://i.ibb.co/R3GqDqq/podcast.png",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/PnBrgPUT6P8zyJCr8",
-    content: () => {
-      return (
-        <p>
-          Join us on our podcast for fun, insightful conversations and fresh perspectives. Tune in and be part of the discussion!
-        </p>
-      );
-    },
-  },
+  
   {
     description: "Ideathon",
     title: "IDEATHON",
@@ -339,12 +296,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Ideathon is an exciting inter-departmental event designed to foster
-          collaboration and innovation among students from across the college.
-          Participants will form groups of three or four, created randomly, and
-          work together to brainstorm a unique and innovative startup idea. The
-          event promotes the exchange of ideas and perspectives, encouraging
-          creativity and teamwork.
+          The Ideathon ha been completed successfully,please visit the gallery section for the event photos.
         </p>
       );
     },
@@ -377,22 +329,6 @@ const cards = [
           Unlock the Power of Data! 🔍📊
           Dive into the world of Data Analytics with this hands-on workshop! Learn to clean, analyze, and visualize real-world data, uncover hidden trends, and create impactful reports that drive smart decisions. Gain practical skills to solve real-world problems and supercharge your career in analytics! 🚀✨
           Don’t just explore data—turn it into insights!🔥 Join us now!!
-        </p>
-      );
-    },
-  },
-  {
-    description: "Gaming Event",
-    title: "ESPORTS SAGA",
-    src: "https://i.ibb.co/NLLtqtb/esports.jpg",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/QvbKox6EkmHVWy1m6",
-    content: () => {
-      return (
-        <p>
-          Esports Saga is a competitive gaming event that brings together players
-          to showcase their skills in a series of popular gaming tournaments.
-          Join us for an exciting day of gaming, fun, and prizes!
         </p>
       );
     },
