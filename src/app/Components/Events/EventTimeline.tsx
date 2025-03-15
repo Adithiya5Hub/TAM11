@@ -286,7 +286,51 @@ const cards = [
       );
     },
   },
-  
+  {
+    description: "Youth Parliament",
+    title: "Youth Parliament",
+    src: "https://i.ibb.co/vHDHf16/youthparliament.webp",
+    ctaText: "Register",
+    ctaLink: "https://forms.gle/w89Gg9P6essdMV9D9",
+    content: () => {
+      return (
+        <p>
+      The Youth Parliament is a platform for young minds to debate, discuss, 
+      and deliberate on pressing global and national issues. It empowers 
+      participants to voice their perspectives, fostering leadership and critical 
+      thinking skills.        
+</p>
+      );
+    },
+  },
+  {
+    description: "Group Discussion",
+    title: "TAM X AIESEC World Cafe",
+    src: "https://i.ibb.co/YFNR3J36/world-cafe.webp",
+    ctaText: "Register",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+          Join us for a lively group discussion on [topic]! Share ideas, spark conversations, and gain fresh perspectives in a fun, engaging space. Don’t just listen—jump in and be part of the discussion. See you there!
+        </p>
+      );
+    },
+  },
+  {
+    description: "Podcast",
+    title: "PODCAST",
+    src: "https://i.ibb.co/R3GqDqq/podcast.png",
+    ctaText: "Register",
+    ctaLink: "https://forms.gle/PnBrgPUT6P8zyJCr8",
+    content: () => {
+      return (
+        <p>
+          Join us on our podcast for fun, insightful conversations and fresh perspectives. Tune in and be part of the discussion!
+        </p>
+      );
+    },
+  },
   {
     description: "Ideathon",
     title: "IDEATHON",
