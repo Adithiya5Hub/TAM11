@@ -285,38 +285,7 @@ const cards = [
         </p>
       );
     },
-  },
-  {
-    description: "Gaming Event",
-    title: "ESPORTS SAGA",
-    src: "https://i.ibb.co/NLLtqtb/esports.jpg",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/QvbKox6EkmHVWy1m6",
-    content: () => {
-      return (
-        <p>
-          Esports Saga is a competitive gaming event that brings together players
-          to showcase their skills in a series of popular gaming tournaments.
-          Join us for an exciting day of gaming, fun, and prizes!
-        </p>
-      );
-    },
-  },
-  
-  {
-    description: "Ideathon",
-    title: "IDEATHON",
-    src: "https://i.ibb.co/qDn3ZsM/ideathon4.jpg",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/FTQcCu4oB5KXBJw6A",
-    content: () => {
-      return (
-        <p>
-          The Ideathon ha been completed successfully,please visit the gallery section for the event photos.
-        </p>
-      );
-    },
-  },
+  },  
   {
     description: "Bootcamp",
     title: "THE DATA DOJO",
