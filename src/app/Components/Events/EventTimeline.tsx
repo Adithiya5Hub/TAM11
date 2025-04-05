@@ -271,6 +271,22 @@ export const CloseIcon = () => {
 const cards = [
   
   {
+    description: "Workshop",
+    title: "UI/UX WORKSHOP",
+    src: "https://i.ibb.co/wsN3S74/Workshop.jpg",
+    ctaText: "Register",
+    ctaLink: "https://forms.gle/QEzmLyJW5b5rC2rV7",
+    content: () => {
+      return (
+        <p>
+          UI/UX Workshop: Design. Develop. Dazzle! 🎨🚀
+          Master the art of UI/UX in this hands-on workshop! Learn to create stunning, intuitive, and seamless user interfaces using industry-leading tools and techniques. Elevate your front-end skills and craft engaging digital experiences that captivate users! ✨🔥 
+          Design smarter. Build better. Impress always! 💡🎯
+        </p>
+      );
+    },
+  },
+  {
     description: "Quiz",
     title: "General Quiz",
     src: "https://i.ibb.co/4gfM58b1/gq.webp",
@@ -332,22 +348,6 @@ const cards = [
           work together to brainstorm a unique and innovative startup idea. The
           event promotes the exchange of ideas and perspectives, encouraging
           creativity and teamwork.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Workshop",
-    title: "UI/UX WORKSHOP",
-    src: "https://i.ibb.co/wsN3S74/Workshop.jpg",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/QEzmLyJW5b5rC2rV7",
-    content: () => {
-      return (
-        <p>
-          UI/UX Workshop: Design. Develop. Dazzle! 🎨🚀
-          Master the art of UI/UX in this hands-on workshop! Learn to create stunning, intuitive, and seamless user interfaces using industry-leading tools and techniques. Elevate your front-end skills and craft engaging digital experiences that captivate users! ✨🔥 
-          Design smarter. Build better. Impress always! 💡🎯
         </p>
       );
     },
