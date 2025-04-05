@@ -24,7 +24,7 @@ const SkeletonOne = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
       Ideathon is an exciting event that challenges participants to develop 
 and promote the exchange of ideas and perspectives, encouraging 
-creativity and teamwork. 
+creativity and teamwork.
       </p></Link>
     </div>
   );
