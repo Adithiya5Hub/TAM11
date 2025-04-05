@@ -16,14 +16,15 @@ export default function LayoutGridDemo() {
 const SkeletonOne = () => {
   return (
     <div>
-      <Link href="https://drive.google.com/drive/folders/1AhHUyq70lft3gPvRJ6ThkMV7fkW0_DAP" target="_blank">
+      <Link href="https://drive.google.com/drive/folders/1BgrY7jbc3NJfMnK1iRrFZKUT5sUh0Bl_?usp=sharing" target="_blank">
       <p className="font-bold md:text-4xl text-xl text-white" style={{fontFamily:'Valorant_Font, sans-serif'}}>
-       General Quiz 
+       Ideathon 
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      The General Quiz is a fun-filled challenge that dives into the 
-world from history to science, sports to entertainment. 
+      Ideathon is an exciting event that challenges participants to develop 
+and promote the exchange of ideas and perspectives, encouraging 
+creativity and teamwork. 
       </p></Link>
     </div>
   );
@@ -91,7 +92,7 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "https://i.ibb.co/W4qz2P5Z/DSCF3694.jpg",
+      "https://i.ibb.co/zTtm0VNX/IMG-3335.jpg",
   },
   {
     id: 2,
