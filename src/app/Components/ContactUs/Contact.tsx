@@ -53,8 +53,8 @@ const Contact = () => {
                     Phone number
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    +91 96525 95873 Tagore Monish (CHIEF)<br />
-                    +91 70758 02770 M. Aditya (TECHNICAL HEAD)
+                    +91 95157 56450 Aabhash Sinha (CHIEF)<br />
+                    +91 93906 93663 Hrishikesh Rathore (MARKETING HEAD)
                   </dd>
                 </div>
               </div>

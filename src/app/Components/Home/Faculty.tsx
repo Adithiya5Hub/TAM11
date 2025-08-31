@@ -53,9 +53,9 @@ export default function StickyScrollRevealDemo() {
             viewport={{ once: false, amount: 0.5 }}
           >
             <div className="aspect-w-16 aspect-h-9"> {/* Enforce 16:9 aspect ratio */}
-              <img
-                src="https://ik.imagekit.io/o3b14qow3gqi/Crew/princi_O8p_H9fUo_tS.jpg?updatedAt=1647430271746"
-                alt="Principal"
+              <img    //gd image replaced - edit_01
+                src="https://ik.imagekit.io/11107/Director.jpeg?updatedAt=1756667038833"
+                alt="Group Director"
                 className="rounded object-cover w-full h-full"
               />
             </div>
@@ -70,7 +70,7 @@ export default function StickyScrollRevealDemo() {
             viewport={{ once: false, amount: 0.5 }}
           >
             <h2 className="text-white font-bold md:text-[40px] sm:text-[30px] xs:text-[25px] text-[20px] mb-4">
-              Dr. P. Santosh Kumar Patra
+              Dr. Ravindra kasa
               <motion.div
                           className="font-boldern text-3xl md:text-3xl mb-8 bg-gradient-to-b from-red-200 to-red-800 bg-clip-text text-transparent"
                           initial={{ scale: 0.8, opacity: 0 }}
@@ -82,7 +82,10 @@ export default function StickyScrollRevealDemo() {
                         </motion.div>
             </h2>
             <p className="sm:text-[18px] text-[14px] text-white tracking-wider">
-              Dr. P. Santosh Kumar Patra, Group Director of St. Martin&apos;s Engineering College, holds a B.E. in Computer Science & Engineering, an MTech in Computer Science & Engineering, and a Ph.D. in Computer Science & Engineering. His areas of interest are Artificial Intelligence, Software Engineering, Data Mining and Warehousing, and Wireless Networks.
+            Dr. Ravindra Kasa holds a B.Tech. in ECE from Andhra University, an M.E. with Honors from IIT Roorkee, and a Ph.D. in Mobile Communications from Osmania University. A Gold Medalist from Roorkee, he has 36+ years of teaching, 6 years of research, and 25 years of administrative experience.
+            <br />
+            <br />
+            He previously served as Senior Scientist at Osmania University, Principal & Professor at MRITS for 17 years, and Dean of Engineering at Malla Reddy University. Dr. Ravindra now leads as Director, fostering academic excellence and innovation.
             </p>
           </motion.div>
         </motion.div>

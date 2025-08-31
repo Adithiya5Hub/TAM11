@@ -268,38 +268,60 @@ export const CloseIcon = () => {
   );
 };
 
+//edit_02
 const cards = [
-  
   {
-    description: "Workshop",
-    title: "UI/UX WORKSHOP",
-    src: "https://i.ibb.co/wsN3S74/Workshop.jpg",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/QEzmLyJW5b5rC2rV7",
+    description: "Announcement",
+    title: "More Events Coming Soon!",
+    src: "https://i.ibb.co/wsN3S74/Workshop.jpg", // you can change/remove this image
+    ctaText: "Stay Tuned",
+    ctaLink: "#", // no link needed
     content: () => {
       return (
         <p>
-          UI/UX Workshop: Design. Develop. Dazzle! 🎨🚀
-          Master the art of UI/UX in this hands-on workshop! Learn to create stunning, intuitive, and seamless user interfaces using industry-leading tools and techniques. Elevate your front-end skills and craft engaging digital experiences that captivate users! ✨🔥 
-          Design smarter. Build better. Impress always! 💡🎯
-        </p>
-      );
-    },
-  },  
-  {
-    description: "Bootcamp",
-    title: "THE DATA DOJO",
-    src: "https://i.ibb.co/mcDbQpR/Data-analytics.jpg",
-    ctaText: "Register",
-    ctaLink: "https://forms.gle/bDyP6xnqGf8ZKiuA9",
-    content: () => {
-      return (
-        <p>
-          Unlock the Power of Data! 🔍📊
-          Dive into the world of Data Analytics with this hands-on workshop! Learn to clean, analyze, and visualize real-world data, uncover hidden trends, and create impactful reports that drive smart decisions. Gain practical skills to solve real-world problems and supercharge your career in analytics! 🚀✨
-          Don’t just explore data—turn it into insights!🔥 Join us now!!
+          We’ll come back again with more events. 🚀✨  
+          Stay tuned for exciting updates!
         </p>
       );
     },
   },
 ];
+
+
+//List of events .!
+
+// const cards = [
+  
+//   {
+//     description: "Workshop",
+//     title: "UI/UX WORKSHOP",
+//     src: "https://i.ibb.co/wsN3S74/Workshop.jpg",
+//     ctaText: "Register",
+//     ctaLink: "https://forms.gle/QEzmLyJW5b5rC2rV7",
+//     content: () => {
+//       return (
+//         <p>
+//           UI/UX Workshop: Design. Develop. Dazzle! 🎨🚀
+//           Master the art of UI/UX in this hands-on workshop! Learn to create stunning, intuitive, and seamless user interfaces using industry-leading tools and techniques. Elevate your front-end skills and craft engaging digital experiences that captivate users! ✨🔥 
+//           Design smarter. Build better. Impress always! 💡🎯
+//         </p>
+//       );
+//     },
+//   },  
+//   {
+//     description: "Bootcamp",
+//     title: "THE DATA DOJO",
+//     src: "https://i.ibb.co/mcDbQpR/Data-analytics.jpg",
+//     ctaText: "Register",
+//     ctaLink: "https://forms.gle/bDyP6xnqGf8ZKiuA9",
+//     content: () => {
+//       return (
+//         <p>
+//           Unlock the Power of Data! 🔍📊
+//           Dive into the world of Data Analytics with this hands-on workshop! Learn to clean, analyze, and visualize real-world data, uncover hidden trends, and create impactful reports that drive smart decisions. Gain practical skills to solve real-world problems and supercharge your career in analytics! 🚀✨
+//           Don’t just explore data—turn it into insights!🔥 Join us now!!
+//         </p>
+//       );
+//     },
+//   },
+// ];
